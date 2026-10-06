@@ -1,9 +1,9 @@
 name: Build StarfallSite.dll
 
 # Manual only: Actions tab -> "Build StarfallSite.dll" -> Run workflow.
-# Builds ONLY the plugin in Facility/plugin (relative to the repo root).
-# Note: GitHub only picks up workflows from <repo root>/.github/workflows/, so copy this file
-# there in the repository (it is kept next to the plugin sources here for reference).
+# Builds ONLY the StarfallSite plugin. It looks for the folder holding CMakeLists.txt + src/Gate.cpp
+# anywhere in the repo (normally Facility/plugin), so the upload layout doesn't have to be exact.
+# GitHub only picks up workflows from <repo root>/.github/workflows/.
 
 on:
   workflow_dispatch:
@@ -11,23 +11,26 @@ on:
 jobs:
   build:
     runs-on: windows-latest
-    env:
-      PROJ: ${{ github.workspace }}/Facility/plugin
     defaults:
       run:
         shell: pwsh
-        working-directory: Facility/plugin
     steps:
       - uses: actions/checkout@v4
 
-      - name: Check the project folder
+      - name: Find the plugin folder
         run: |
-          if (-not (Test-Path "$env:PROJ/CMakeLists.txt")) {
-            Write-Host "Facility/plugin/CMakeLists.txt not found. Files at the repo root:"
-            Get-ChildItem -Path "$env:GITHUB_WORKSPACE" | Format-Table Name, Mode
+          $hit = Get-ChildItem -Path "$env:GITHUB_WORKSPACE" -Recurse -Filter Gate.cpp -File |
+                 Where-Object { (Split-Path $_.DirectoryName -Leaf) -eq 'src' -and
+                                (Test-Path (Join-Path (Split-Path $_.DirectoryName) 'CMakeLists.txt')) } |
+                 Select-Object -First 1
+          if (-not $hit) {
+            Write-Host "Could not find the StarfallSite plugin (CMakeLists.txt + src/Gate.cpp). Everything in the repo:"
+            Get-ChildItem -Path "$env:GITHUB_WORKSPACE" -Recurse -Name | Where-Object { $_ -notlike '.git\*' } | Select-Object -First 300
             exit 1
           }
-          Write-Host "Project folder: $env:PROJ"
+          $proj = Split-Path $hit.DirectoryName
+          Write-Host "Project folder: $proj"
+          "PROJ=$proj" | Out-File -FilePath $env:GITHUB_ENV -Append
 
       - name: Set up vcpkg
         run: |
@@ -42,19 +45,22 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ${{ runner.temp }}/vcpkg-cache
-          key: vcpkg-starfall-${{ runner.os }}-${{ hashFiles('Facility/plugin/vcpkg.json') }}
+          key: vcpkg-starfall-${{ runner.os }}-${{ hashFiles('**/vcpkg.json') }}
           restore-keys: vcpkg-starfall-${{ runner.os }}-
 
       - name: Configure
+        working-directory: ${{ env.PROJ }}
         run: >
           cmake -S . -B build -A x64
           -DCMAKE_TOOLCHAIN_FILE="$env:VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake"
           -DVCPKG_TARGET_TRIPLET=x64-windows-static-md
 
       - name: Build
+        working-directory: ${{ env.PROJ }}
         run: cmake --build build --config Release --parallel
 
       - name: Package
+        working-directory: ${{ env.PROJ }}
         run: |
           $dist = "$env:GITHUB_WORKSPACE/dist"
           New-Item -ItemType Directory -Force -Path "$dist/SKSE/Plugins/StarfallSite" | Out-Null
