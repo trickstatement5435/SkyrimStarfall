@@ -1,0 +1,105 @@
+{
+  "name": "Anomalous Materials",
+  "stages": {
+    "10": "I have found a strange encampment built inside a crater east of Riverwood. It calls itself the Starfall Research Site. The guards told me to speak with Director Kast.",
+    "20": "Director Kast has sent me to Dr. Hale in the Test Chamber. Hale wants three Energy Crystals, which can be found in Embershard Mine near Riverwood.",
+    "30": "Dr. Hale was delighted with the crystals. Dr. Rusk, the site's nervous physician, asked me to recover his research journal from the sealed Containment Wing B, and gave me a keycard.",
+    "40": "I returned Rusk's journal. He revealed that Director Kast sealed Wing B during Incident Seven with six people still inside, then buried the report. I should confront Kast.",
+    "50": "Director Kast admitted to sealing Wing B. Whatever I make of his reasons, he granted me Directorate Clearance. Dr. Hale will now trade Energy Crystals with me, and the armory is open."
+  },
+  "objectives": {
+    "10": "Speak with Director Kast",
+    "20": "Bring 3 Energy Crystals to Dr. Hale",
+    "30": "Recover Dr. Rusk's journal from Containment Wing B",
+    "40": "Confront Director Kast about Incident Seven"
+  },
+  "items": {
+    "journal": {
+      "name": "Rusk's Research Journal",
+      "text": "Rusk, E. Personal research journal. Do not remove from Wing B.\n\n12th of Last Seed, 4E 201\nSpecimen H-14 has stopped eating. It sits facing the north wall, toward the Test Chamber, and does not move. H-9 and H-11 are doing the same. I have told Kast. He wants it 'noted.'\n\n15th of Last Seed\nHale is running the array at eighty percent tonight. Every parasite in the wing pressed itself against the glass ten seconds before the cycle began. Ten seconds BEFORE. They know. I don't know how, but they know.\n\n17th of Last Seed\nAsked Kast to postpone the full resonance test. He said the Directorate wants numbers, not nerves. Venn reinforced the bulkhead seals this afternoon. Nobody told him why. Nobody told me either.\n\n19th of Last Seed\nIncident Seven. I am writing this from my office with the door barred. The array hit peak at the eleventh hour. Every enclosure in the wing failed at once. The glass did not break. It simply was not there anymore.\n\nCorvin was bitten near the hosts' pen. Dana dragged him clear. Two of Moran's officers came running from the east hall. Seven of us were still past the bulkhead when the alarms changed tone.\n\nI reached the intercom. I told Kast we had seven people alive on our side. I told him we were coming.\n\nHe sealed the bulkhead anyway.\n\n20th of Last Seed\nI got out through the service duct. The others did not fit. I listened to them knock for most of the night.\n\n22nd of Last Seed\nKast has filed the report. Wing B was 'unoccupied at time of seal.' He brought me the staff roster and asked me to sign it. I signed it. May whatever gods this land keeps forgive me, because I will not.\n\nI am leaving this journal here, behind the seal, where it cannot be burned. If someone finds it, the truth is on these pages. I was not brave enough to say it aloud."
+    },
+    "keycard": {
+      "name": "Wing B Keycard"
+    }
+  },
+  "notes": [
+    {
+      "id": "note_shift_log",
+      "title": "Test Chamber Shift Log",
+      "where": "Test Chamber observation room, on the console desk",
+      "text": "Shift log, Test Chamber, week of Sun's Height.\n\nDay one: Array at sixty percent. Crystal three sang a clean tone for four minutes. Hale applauded. Venn did not.\n\nDay two: Array at seventy. Minor rift flicker at the sample cradle. Something small and gray looked through. It looked back at us, then left. Hale wants to name it. Request denied.\n\nDay three: Coolant line froze. Not from the cold. From the crystal. Venn says this is impossible. Venn has said that four times this week.\n\nDay four: Pell fainted at the window. Ozone, probably. Possibly the gray thing again. Pell refuses to say.\n\nDay five: Hale requested ninety percent. Director said no. Hale ran eighty-five 'by accident.' Logged as calibration error. It was not a calibration error.\n\nReminder to all staff: the observation glass is rated for pressure, not for headcrabs. Do not tap on it."
+    },
+    {
+      "id": "note_kast_memo",
+      "title": "Memo: Missing Prototype",
+      "where": "Director Kast's office, on his desk under a paperweight",
+      "text": "INTERNAL MEMO. Director's office. Restricted.\n\nTo: Captain Moran, Dr. Hale\n\nFollowing the Wing B event, a Zero-Point Field Manipulator prototype is unaccounted for. The armory log shows it signed out by a junior researcher who has since left the site without leave. Witnesses saw the individual heading west along the river road toward Riverwood, carrying a large bundle and, I am told, crying.\n\nI do not want a search party. A squad of armored strangers kicking down doors in a Nord village will raise more questions than one missing device. The prototype cannot function without a charged crystal, and the locals will assume it is a strange farming tool.\n\nIf it surfaces, recover it quietly. If someone else is using it, observe them first. Anyone who can make that device work without training is worth knowing.\n\nDr. Hale: please stop referring to it as 'your baby' in official correspondence.\n\nA. Kast, Site Director"
+    },
+    {
+      "id": "note_venn_requisition",
+      "title": "Requisition Form 14-C",
+      "where": "Venn's workbench in the generator room",
+      "text": "REQUISITION FORM 14-C. Engineering.\n\nRequested by: T. Venn, Chief Engineer\n\nItems requested:\n1. Copper wire, two hundred lengths. (Status: denied, rift unstable.)\n2. Insulated gloves, six pairs. (Status: denied, see item 1.)\n3. Any screw. Any screw at all. (Status: pending.)\n4. A replacement for the hammer Hale borrowed and then threw through a rift. (Status: unrecoverable.)\n5. Spare fuses, twelve. (Status: a local mage offered to 'be the fuse.' Declined.)\n\nJustification: The resonance array is held together by optimism and a belt I bought in Whiterun. Generator two makes a noise I can only describe as grief. If this form is denied again, I will begin trading with the Riverwood smith directly, and I will not be sorry.\n\nApproved by: ______\n\nNote added by Director: Please use the form's actual fields, Tobias."
+    },
+    {
+      "id": "note_guard_roster",
+      "title": "Security Duty Roster",
+      "where": "Guard barracks, pinned to the wall by the bunks",
+      "text": "DUTY ROSTER. Posted by Capt. D. Moran.\n\nNorth fence: Officers two and five. Watch the ridge. Yes, the rock moves. No, you may not shoot it.\n\nGate: Officers one and seven. Do not accept mead, cheese, or marriage proposals from locals while on duty.\n\nCanister bay: Officer four. Check every lid twice. If a lid checks you back, sound the alarm.\n\nTest Chamber escort: Officer three. Stand behind Dr. Hale, not in front. You know why.\n\nWing B corridor: Nobody. Corridor is sealed. Do not knock on the door. Do not listen at the door.\n\nVent sweeps: Everyone, hourly. Complaints about vent sweeps go in the box marked 'Complaints.' The box is a brazier.\n\nReminder: the last person who called a headcrab 'cute' needed eleven stitches. Act accordingly.\n\nAdded underneath in a different hand: Who keeps taking the good helmet?"
+    },
+    {
+      "id": "note_rusk_specimens",
+      "title": "Specimen Observations: Hollow Parasite",
+      "where": "Dr. Rusk's medical lab, beside the specimen tanks",
+      "text": "Specimen observations, Dr. E. Rusk.\n\nThe parasite colloquially called a 'headcrab' is a jumping organism roughly the size of a bread loaf. It seeks the highest warm point of a target, which in most cases is the head.\n\nBehaviour notes:\nThey are ambush hunters. They hide in vents, crates, and tall grass, and launch themselves at movement.\nThey avoid open flame but are not frightened by it. They simply wait for it to go out.\nThey prefer tall hosts. Nords are, I regret to report, ideal.\nOnce attached, the parasite binds to the host's nervous system within minutes. The host, which the guards call a zombie, continues to walk and attack, but responds to the parasite's hunger, not its own.\n\nI have tested every tincture in the Riverwood alchemist's stock. None separate parasite from host. Removal kills both.\n\nMost troubling: all specimens orient toward the Test Chamber when the array runs. I believe they hear it. I believe it calls them."
+    },
+    {
+      "id": "note_cascade_log",
+      "title": "Resonance Cascade Test Log",
+      "where": "Test Chamber control console, half burned",
+      "text": "AUTOMATED LOG, RESONANCE ARRAY. 19th of Last Seed.\n\nTen past eleven: Cycle start. Target eighty percent. Operator: Hale.\nEleven sixteen: Eighty percent reached. Crystal tone stable.\nEleven seventeen: Operator override. Target raised to one hundred.\nEleven eighteen: Ninety percent. Harmonic drift in crystals two and five.\nEleven nineteen: Ninety-six percent. Sample cradle temperature falling. Frost forming on the cradle.\nEleven twenty: One hundred percent. Cascade detected. Rift aperture opening outside the chamber.\nEleven twenty: Secondary aperture detected in Containment Wing B.\nEleven twenty: Third aperture detected. Location unknown. Somewhere outside the crater.\nEleven twenty-one: Emergency shutdown requested. Shutdown failed.\nEleven twenty-two: Manual crystal ejection. Array offline.\nEleven twenty-three: Bulkhead B sealed by Director's override.\n\nOperator comment, scrawled in ink beside the printout: It held. Gods help me, my chamber held. The others did not."
+    },
+    {
+      "id": "note_letter_unsent",
+      "title": "Unsent Letter",
+      "where": "Inside sealed Containment Wing B, on a desk in the staff room",
+      "text": "Dear Mira,\n\nI am still not allowed to tell you where I am, so let's say it's cold, there are mountains, and the people here drink something called mead that would strip paint.\n\nThe work is good. Better than good. We found something here that could change everything back home. I wish you could see the crystals. They sing, Mira. Actually sing.\n\nThings are tense this week. Dr. Rusk looks like he hasn't slept since spring, and the specimens keep staring at the walls. The Director says it's nothing. He always says it's nothing.\n\nThe alarms just changed. I'll finish this later.\n\nI'll finish this later.\n\nI love you. Tell Pip I'm bringing back a dragon tooth.\n\nDana"
+    },
+    {
+      "id": "note_courier",
+      "title": "Crumpled Courier's Note",
+      "where": "On a dead courier beside a cracked headcrab canister in the hills east of Riverwood",
+      "text": "To whoever finds this,\n\nI was carrying letters to Whiterun when I saw the metal thing fall out of the sky. Thought it was another piece of the falling star. Thought I'd be rich.\n\nIt was hot when I got to it. Hissing. The lid opened by itself. There was something inside, pale, with legs. It didn't move at first, so I poked it with my walking stick.\n\nThat was a mistake.\n\nIt went for my face. I knocked it off but it got my neck. The wound isn't bleeding right. It's going gray around the edges and my head feels too full.\n\nThe letters are in my satchel. Please deliver them. And if you see one of those things, don't poke it.\n\nTell my mother I didn't steal the cheese wheel from Lucan. Faendal did."
+    },
+    {
+      "id": "note_evac_order",
+      "title": "Incident Seven: Evacuation Order",
+      "where": "Sealed Containment Wing B, posted beside the inner bulkhead",
+      "text": "EMERGENCY ORDER. Containment Wing B.\nAuthority: Director A. Kast.\n\nA containment failure is in progress. All staff are to proceed immediately to the east bulkhead.\n\nThe bulkhead will be sealed in five minutes.\n\nDo not stop for equipment. Do not stop for specimens. Do not stop for colleagues who have been in contact with a host.\n\nOnce sealed, the bulkhead will not be reopened until the wing is confirmed clear.\n\nThis order supersedes all others.\n\nHandwritten beneath, in a shaking hand:\nIt was not five minutes. It was two. We were at the door. We were AT THE DOOR.\n\nAnd beneath that, fainter:\nSix of us. Still knocking. Someone tell Rusk to tell them."
+    },
+    {
+      "id": "note_pamphlet",
+      "title": "The Lambda Directorate Wants You",
+      "where": "Site entrance lobby, in a stack on the reception desk",
+      "text": "THE LAMBDA DIRECTORATE WANTS YOU!\n\nAre you curious? Courageous? Comfortable with mild to moderate risk of being lifted off the ground?\n\nJoin the brightest minds of a distant world at Starfall Research Site, the premier crystal research facility in the entire province.\n\nWe offer:\nSteady meals (soup).\nWarm lodgings (warm-adjacent).\nA front row seat to the future of energy.\nComplimentary decontamination showers.\nGenerous hazard bonus, payable at end of contract.\n\nWe are seeking:\nLaborers, haulers, and anyone who can lift a crate without asking what is inside.\nLocal guides familiar with the mountains east of Riverwood.\nMages, for comparison purposes only.\n\nThe Directorate is an equal opportunity employer. Nords, elves, and Khajiit welcome. Giants, sadly, cannot fit through the door.\n\nApply at the main gate. Do not approach the gate after dark. Officers may be nervous."
+    },
+    {
+      "id": "note_farmer",
+      "title": "The Falling Star: A Farmer's Account",
+      "where": "Riverwood, on a table in the Sleeping Giant Inn",
+      "text": "As told by Gunnar Stone-Field, farmer, to anyone who'll buy him a drink.\n\nI was mending my fence the night it came. The whole sky went white, brighter than Masser and Secunda put together. Then a sound like a thousand Thu'um at once, and the mountain to the east shook like a wet dog.\n\nIn the morning there was a hole in the world. Smoke for days. The goats wouldn't eat. The chickens laid eggs that glowed a little. My wife made me bury them.\n\nThen the strangers came. Odd clothes, odd words, odd little lights that never go out. They built walls inside the hole and put men in masks to guard them.\n\nThey're polite, mostly. One of them, a quiet one, reads our sagas at the inn and asks good questions.\n\nBut I'll tell you this. Since they came, I've seen things in the hills. Pale things. Scuttling things. And once, a man walking with something on his head that wasn't a hat.\n\nThe Jarl says it's nothing. Jarls always say it's nothing."
+    },
+    {
+      "id": "note_hale_desk",
+      "title": "Hale's Manipulator Notes",
+      "where": "Dr. Hale's desk in the Test Chamber annex",
+      "text": "Zero-Point Field Manipulator, design notes, rev. 9. M. Hale.\n\nPrinciple: The crystal stores zero-point energy. The manipulator vents a controlled thread of that energy as a field. The field grips mass. The operator does the rest.\n\nPull mode: gentle, steady draw. Lifts crates, carts, and, in one memorable test, Venn's chair with Venn in it.\n\nPunt mode: full discharge. Hurls the held object at speeds I am not yet allowed to measure indoors.\n\nPower: one charged crystal per cell. Cells drain faster on heavy objects. Do not try to lift a mammoth. I have tried. The mammoth was not pleased.\n\nKnown issues:\nThe grip hums at a pitch that headcrabs seem to hate. Excellent.\nThe grip also hums at a pitch Kast seems to hate. Also excellent.\n\nPrototype three is missing. If anyone finds it, please return it. She pulls slightly left. I love her anyway."
+    },
+    {
+      "id": "note_wuunferth_receipt",
+      "title": "Receipt of Sale",
+      "where": "Site archive, in a drawer of Venn's filing cabinet",
+      "text": "Receipt of sale, witnessed at Windhelm.\n\nSold to: Wuunferth the Unliving, Court Wizard of Windhelm.\nSold by: T. Venn, on behalf of nobody, officially.\n\nItems: Twelve pages of crystal resonance notes, copied by hand. Outdated, mostly harmless.\n\nPayment: Three hundred septims, one bag of fire salts, and the wizard's word that he would not ask where we came from.\n\nVenn's note on the back:\nNeeded the coin for parts. The Directorate will never pay for them. The old man studied the pages for an hour without blinking, then said something about 'trapping the song of the star.' A week later he was selling a spell that pulls energy from crystals. Not my problem. Probably. Do not tell Kast."
+    }
+  ]
+}

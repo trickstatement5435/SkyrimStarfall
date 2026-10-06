@@ -1,0 +1,4416 @@
+{
+  "speakers": [
+    "SFKast",
+    "SFHale",
+    "SFRusk",
+    "SFVenn",
+    "SFPell",
+    "SFHolt",
+    "SFMire",
+    "SFMoran",
+    "GuardA",
+    "GuardB"
+  ],
+  "greetings": [
+    {
+      "id": "gr_kast_01",
+      "speaker": "SFKast",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "Mind the cables. Some of them are load bearing, and none of them are labeled."
+    },
+    {
+      "id": "gr_kast_02",
+      "speaker": "SFKast",
+      "cond": [
+        "stage==10"
+      ],
+      "emotion": "Neutral",
+      "text": "Ah. The visitor security keeps radioing about. Come, we should talk."
+    },
+    {
+      "id": "gr_kast_03",
+      "speaker": "SFKast",
+      "cond": [
+        "hasGravityGun"
+      ],
+      "emotion": "Surprise",
+      "text": "That device on your back. I believe it still has our inventory number on it."
+    },
+    {
+      "id": "gr_kast_04",
+      "speaker": "SFKast",
+      "cond": [
+        "stage==20"
+      ],
+      "emotion": "Neutral",
+      "text": "Dr. Hale is in the Test Chamber. Follow the shouting."
+    },
+    {
+      "id": "gr_kast_05",
+      "speaker": "SFKast",
+      "cond": [
+        "stage==30"
+      ],
+      "emotion": "Puzzled",
+      "text": "Rusk has been pacing again. If he asks you for anything, use discretion."
+    },
+    {
+      "id": "gr_kast_06",
+      "speaker": "SFKast",
+      "cond": [
+        "stage==40"
+      ],
+      "emotion": "Neutral",
+      "text": "You have the look of someone who's been reading. Rusk's handwriting, I suppose."
+    },
+    {
+      "id": "gr_kast_07",
+      "speaker": "SFKast",
+      "cond": [
+        "stage>=50"
+      ],
+      "emotion": "Neutral",
+      "text": "Clearance suits you. Try not to abuse it more than the rest of us do."
+    },
+    {
+      "id": "gr_kast_08",
+      "speaker": "SFKast",
+      "cond": [
+        "night"
+      ],
+      "emotion": "Neutral",
+      "text": "Most of the staff sleep at this hour. I find the crater more honest at night."
+    },
+    {
+      "id": "gr_hale_01",
+      "speaker": "SFHale",
+      "cond": [],
+      "emotion": "Happy",
+      "text": "You hear that hum? That's the array. Beautiful, isn't it?"
+    },
+    {
+      "id": "gr_hale_02",
+      "speaker": "SFHale",
+      "cond": [
+        "hasGravityGun"
+      ],
+      "emotion": "Happy",
+      "text": "My manipulator! You've been taking care of her? Don't answer, I can see the scorch marks."
+    },
+    {
+      "id": "gr_hale_03",
+      "speaker": "SFHale",
+      "cond": [
+        "hasGravityGun",
+        "stage>=30"
+      ],
+      "emotion": "Happy",
+      "text": "How's the pull on her? Lifting carts yet? Tell me you've thrown a cow."
+    },
+    {
+      "id": "gr_hale_04",
+      "speaker": "SFHale",
+      "cond": [
+        "stage==20"
+      ],
+      "emotion": "Neutral",
+      "text": "Kast sent you? Good. I need hands, and you have two."
+    },
+    {
+      "id": "gr_hale_05",
+      "speaker": "SFHale",
+      "cond": [
+        "stage==30"
+      ],
+      "emotion": "Happy",
+      "text": "Those crystals sang beautifully. Rusk wants a word with you, by the way."
+    },
+    {
+      "id": "gr_hale_06",
+      "speaker": "SFHale",
+      "cond": [
+        "stage>=50"
+      ],
+      "emotion": "Happy",
+      "text": "Clearance, eh? Then I'm officially allowed to sell you dangerous things."
+    },
+    {
+      "id": "gr_hale_07",
+      "speaker": "SFHale",
+      "cond": [
+        "noGravityGun"
+      ],
+      "emotion": "Puzzled",
+      "text": "You'd look better holding a manipulator. Everyone would."
+    },
+    {
+      "id": "gr_rusk_01",
+      "speaker": "SFRusk",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Did you close the door behind you? Please tell me you closed the door."
+    },
+    {
+      "id": "gr_rusk_02",
+      "speaker": "SFRusk",
+      "cond": [],
+      "emotion": "Sad",
+      "text": "Wash your hands before touching anything. And after. Especially after."
+    },
+    {
+      "id": "gr_rusk_03",
+      "speaker": "SFRusk",
+      "cond": [
+        "stage==20"
+      ],
+      "emotion": "Neutral",
+      "text": "Crystals for Hale? Wear gloves. They hum right through the skin."
+    },
+    {
+      "id": "gr_rusk_04",
+      "speaker": "SFRusk",
+      "cond": [
+        "stage==30",
+        "hasKeycard"
+      ],
+      "emotion": "Fear",
+      "text": "You still have the keycard? Keep it out of sight. Kast notices things."
+    },
+    {
+      "id": "gr_rusk_05",
+      "speaker": "SFRusk",
+      "cond": [
+        "stage==40"
+      ],
+      "emotion": "Sad",
+      "text": "I've told you everything. I feel lighter, and also terribly exposed."
+    },
+    {
+      "id": "gr_rusk_06",
+      "speaker": "SFRusk",
+      "cond": [
+        "stage>=50"
+      ],
+      "emotion": "Neutral",
+      "text": "The truth is out. Strange. The air in here tastes cleaner."
+    },
+    {
+      "id": "gr_rusk_07",
+      "speaker": "SFRusk",
+      "cond": [
+        "night"
+      ],
+      "emotion": "Fear",
+      "text": "I don't sleep much anymore. The vents make noises at night."
+    },
+    {
+      "id": "gr_venn_01",
+      "speaker": "SFVenn",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "If you came to report a broken thing, take a number. The number is also broken."
+    },
+    {
+      "id": "gr_venn_02",
+      "speaker": "SFVenn",
+      "cond": [],
+      "emotion": "Puzzled",
+      "text": "Do you know where a man finds a decent wrench in this province? No? Nobody does."
+    },
+    {
+      "id": "gr_venn_03",
+      "speaker": "SFVenn",
+      "cond": [
+        "hasGravityGun"
+      ],
+      "emotion": "Neutral",
+      "text": "Is that Hale's toy? Don't let him near it. He'll want to tune it."
+    },
+    {
+      "id": "gr_venn_04",
+      "speaker": "SFVenn",
+      "cond": [
+        "stage==20"
+      ],
+      "emotion": "Neutral",
+      "text": "Fetching crystals for Hale? Bring a spare. I need one for the lights."
+    },
+    {
+      "id": "gr_venn_05",
+      "speaker": "SFVenn",
+      "cond": [
+        "stage>=40"
+      ],
+      "emotion": "Sad",
+      "text": "So it's all coming out about Wing B. I rewired those doors. Never asked why."
+    },
+    {
+      "id": "gr_venn_06",
+      "speaker": "SFVenn",
+      "cond": [
+        "stage>=50"
+      ],
+      "emotion": "Neutral",
+      "text": "Clearance means you can use the good lift. It still squeaks, mind you."
+    },
+    {
+      "id": "gr_venn_07",
+      "speaker": "SFVenn",
+      "cond": [
+        "day"
+      ],
+      "emotion": "Neutral",
+      "text": "Sun's out. The solar collector will work for nearly an hour."
+    },
+    {
+      "id": "gr_pell_01",
+      "speaker": "SFPell",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Oh! Sorry. I thought you were... sorry. Hello."
+    },
+    {
+      "id": "gr_pell_02",
+      "speaker": "SFPell",
+      "cond": [],
+      "emotion": "Sad",
+      "text": "I haven't slept since Tirdas. Or the Tirdas before. Hard to say."
+    },
+    {
+      "id": "gr_pell_03",
+      "speaker": "SFPell",
+      "cond": [
+        "stage==10"
+      ],
+      "emotion": "Fear",
+      "text": "Looking for the Director? Up the stairs. Please don't tell him I'm on break."
+    },
+    {
+      "id": "gr_pell_04",
+      "speaker": "SFPell",
+      "cond": [
+        "hasGravityGun"
+      ],
+      "emotion": "Fear",
+      "text": "Is that the missing prototype? Could you point it somewhere else, please?"
+    },
+    {
+      "id": "gr_pell_05",
+      "speaker": "SFPell",
+      "cond": [
+        "stage>=40"
+      ],
+      "emotion": "Fear",
+      "text": "People are whispering about Wing B. I don't want to whisper. I want to be elsewhere."
+    },
+    {
+      "id": "gr_pell_06",
+      "speaker": "SFPell",
+      "cond": [
+        "stage>=50"
+      ],
+      "emotion": "Surprise",
+      "text": "You confronted the Director and walked out? Impressive. Truly."
+    },
+    {
+      "id": "gr_holt_01",
+      "speaker": "SFHolt",
+      "cond": [],
+      "emotion": "Happy",
+      "text": "Brennic Holt. Remember the name. It'll be on the Test Chamber door someday."
+    },
+    {
+      "id": "gr_holt_02",
+      "speaker": "SFHolt",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "If you're looking for real talent around here, you just found it."
+    },
+    {
+      "id": "gr_holt_03",
+      "speaker": "SFHolt",
+      "cond": [
+        "hasGravityGun"
+      ],
+      "emotion": "Neutral",
+      "text": "Hale's gun. Honestly, I'd have built it with a better grip."
+    },
+    {
+      "id": "gr_holt_04",
+      "speaker": "SFHolt",
+      "cond": [
+        "stage==20"
+      ],
+      "emotion": "Neutral",
+      "text": "Running errands for Hale? Starting at the bottom. I respect that."
+    },
+    {
+      "id": "gr_holt_05",
+      "speaker": "SFHolt",
+      "cond": [
+        "stage>=40"
+      ],
+      "emotion": "Happy",
+      "text": "Rumor says Kast is in trouble. Shame. Promotions open up in times like these."
+    },
+    {
+      "id": "gr_holt_06",
+      "speaker": "SFHolt",
+      "cond": [
+        "stage>=50"
+      ],
+      "emotion": "Neutral",
+      "text": "Clearance already? Fine. I'm only slightly jealous."
+    },
+    {
+      "id": "gr_mire_01",
+      "speaker": "SFMire",
+      "cond": [],
+      "emotion": "Happy",
+      "text": "Good day. Have you read any local sagas? I'm halfway through one about a bear."
+    },
+    {
+      "id": "gr_mire_02",
+      "speaker": "SFMire",
+      "cond": [],
+      "emotion": "Sad",
+      "text": "Do the stars look the same where you're from? They don't, where I'm from."
+    },
+    {
+      "id": "gr_mire_03",
+      "speaker": "SFMire",
+      "cond": [
+        "day"
+      ],
+      "emotion": "Happy",
+      "text": "Lovely morning. The Nords at the crater's edge waved at me today."
+    },
+    {
+      "id": "gr_mire_04",
+      "speaker": "SFMire",
+      "cond": [
+        "stage==10"
+      ],
+      "emotion": "Neutral",
+      "text": "You're new here. Welcome. Don't touch anything that glows green."
+    },
+    {
+      "id": "gr_mire_05",
+      "speaker": "SFMire",
+      "cond": [
+        "hasGravityGun"
+      ],
+      "emotion": "Puzzled",
+      "text": "You carry that thing like a farmer carries a hoe. It's oddly comforting."
+    },
+    {
+      "id": "gr_mire_06",
+      "speaker": "SFMire",
+      "cond": [
+        "stage>=40"
+      ],
+      "emotion": "Sad",
+      "text": "I knew some of the people in Wing B. Nobody would tell us anything."
+    },
+    {
+      "id": "gr_moran_01",
+      "speaker": "SFMoran",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "Keep your hands where my officers can see them."
+    },
+    {
+      "id": "gr_moran_02",
+      "speaker": "SFMoran",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Another civilian. Wonderful. Don't touch the scientists, they bruise."
+    },
+    {
+      "id": "gr_moran_03",
+      "speaker": "SFMoran",
+      "cond": [
+        "stage==10"
+      ],
+      "emotion": "Neutral",
+      "text": "Director's expecting you. Straight through, no detours."
+    },
+    {
+      "id": "gr_moran_04",
+      "speaker": "SFMoran",
+      "cond": [
+        "hasGravityGun"
+      ],
+      "emotion": "Neutral",
+      "text": "Kast will want that back. Not my problem unless you point it at my people."
+    },
+    {
+      "id": "gr_moran_05",
+      "speaker": "SFMoran",
+      "cond": [
+        "stage>=40"
+      ],
+      "emotion": "Anger",
+      "text": "Wing B. They sealed it on my shift and told me it was empty."
+    },
+    {
+      "id": "gr_moran_06",
+      "speaker": "SFMoran",
+      "cond": [
+        "stage>=50"
+      ],
+      "emotion": "Neutral",
+      "text": "Your clearance came through. Armory's open to you. Don't make me regret it."
+    },
+    {
+      "id": "gr_moran_07",
+      "speaker": "SFMoran",
+      "cond": [
+        "night"
+      ],
+      "emotion": "Neutral",
+      "text": "Night shift. Keep your torch low and your voice lower."
+    },
+    {
+      "id": "gr_guardA_01",
+      "speaker": "GuardA",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "Move along. Nothing to see. Well, plenty to see. Just don't."
+    },
+    {
+      "id": "gr_guardA_02",
+      "speaker": "GuardA",
+      "cond": [],
+      "emotion": "Sad",
+      "text": "Six months in a crater. I used to have a window."
+    },
+    {
+      "id": "gr_guardA_03",
+      "speaker": "GuardA",
+      "cond": [],
+      "emotion": "Puzzled",
+      "text": "You from around here? Is it always this cold, or is it just us?"
+    },
+    {
+      "id": "gr_guardA_04",
+      "speaker": "GuardA",
+      "cond": [
+        "night"
+      ],
+      "emotion": "Fear",
+      "text": "Hear that? No? Good. Neither did I."
+    },
+    {
+      "id": "gr_guardA_05",
+      "speaker": "GuardA",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "The scientists break it, we shoot it. That's the arrangement."
+    },
+    {
+      "id": "gr_guardA_06",
+      "speaker": "GuardA",
+      "cond": [],
+      "emotion": "Disgust",
+      "text": "Some Nord offered me a bottle of mead for my helmet. I almost said yes."
+    },
+    {
+      "id": "gr_guardA_07",
+      "speaker": "GuardA",
+      "cond": [
+        "hasGravityGun"
+      ],
+      "emotion": "Neutral",
+      "text": "Careful with that manipulator. Last fellow who dropped one lost a toe."
+    },
+    {
+      "id": "gr_guardA_08",
+      "speaker": "GuardA",
+      "cond": [
+        "stage>=50"
+      ],
+      "emotion": "Neutral",
+      "text": "Captain says you've got clearance. Doesn't mean I have to like it."
+    },
+    {
+      "id": "gr_guardA_09",
+      "speaker": "GuardA",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "If you see something with legs and no face, tell someone. Loudly."
+    },
+    {
+      "id": "gr_guardA_10",
+      "speaker": "GuardA",
+      "cond": [
+        "day"
+      ],
+      "emotion": "Neutral",
+      "text": "Sun's out. So it's only freezing, instead of very freezing."
+    },
+    {
+      "id": "gr_guardB_01",
+      "speaker": "GuardB",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "Hey. Don't wander off the lit paths. We don't go there either."
+    },
+    {
+      "id": "gr_guardB_02",
+      "speaker": "GuardB",
+      "cond": [],
+      "emotion": "Sad",
+      "text": "I'd give a week's pay for a proper hot meal. Everything here is soup."
+    },
+    {
+      "id": "gr_guardB_03",
+      "speaker": "GuardB",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Was that a dragon earlier? Tell me that wasn't a dragon."
+    },
+    {
+      "id": "gr_guardB_04",
+      "speaker": "GuardB",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "The scientists say it's safe. The scientists said that last time."
+    },
+    {
+      "id": "gr_guardB_05",
+      "speaker": "GuardB",
+      "cond": [
+        "stage>=40"
+      ],
+      "emotion": "Sad",
+      "text": "Heard the truth about Wing B. Makes you wonder who's next on the list."
+    },
+    {
+      "id": "gr_guardB_06",
+      "speaker": "GuardB",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Twelve hour shifts and the pay comes in promises. Living the dream."
+    },
+    {
+      "id": "gr_guardB_07",
+      "speaker": "GuardB",
+      "cond": [
+        "night"
+      ],
+      "emotion": "Neutral",
+      "text": "Quiet night. I hate quiet nights."
+    },
+    {
+      "id": "gr_guardB_08",
+      "speaker": "GuardB",
+      "cond": [],
+      "emotion": "Puzzled",
+      "text": "A giant walked past the fence yesterday. Didn't even look at us. Rude."
+    },
+    {
+      "id": "gr_guardB_09",
+      "speaker": "GuardB",
+      "cond": [
+        "hasGravityGun"
+      ],
+      "emotion": "Surprise",
+      "text": "Is that Hale's gun? Does the Captain know you have that?"
+    },
+    {
+      "id": "gr_guardB_10",
+      "speaker": "GuardB",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "Checkpoint's that way. Keep your weapon sheathed and your manners polite."
+    }
+  ],
+  "idle": [
+    {
+      "id": "id_kast_01",
+      "speaker": "SFKast",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "Variance at four percent. Acceptable. Probably."
+    },
+    {
+      "id": "id_kast_02",
+      "speaker": "SFKast",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Someone has moved my chair. Again."
+    },
+    {
+      "id": "id_kast_03",
+      "speaker": "SFKast",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "The Directorate expects results. The Directorate is also very far away."
+    },
+    {
+      "id": "id_kast_04",
+      "speaker": "SFKast",
+      "cond": [],
+      "emotion": "Puzzled",
+      "text": "Remarkable stone. Utterly indifferent to our deadlines."
+    },
+    {
+      "id": "id_kast_05",
+      "speaker": "SFKast",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "If Hale pushes that array once more without asking, he'll be counting rivets."
+    },
+    {
+      "id": "id_hale_01",
+      "speaker": "SFHale",
+      "cond": [],
+      "emotion": "Happy",
+      "text": "Come on, sweetheart, give me ten more percent."
+    },
+    {
+      "id": "id_hale_02",
+      "speaker": "SFHale",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Who keeps unplugging the capacitor? I know it's Venn."
+    },
+    {
+      "id": "id_hale_03",
+      "speaker": "SFHale",
+      "cond": [],
+      "emotion": "Happy",
+      "text": "Gravity's just a suggestion, if you ask it nicely."
+    },
+    {
+      "id": "id_hale_04",
+      "speaker": "SFHale",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "One more test. Just one more. Then lunch."
+    },
+    {
+      "id": "id_hale_05",
+      "speaker": "SFHale",
+      "cond": [],
+      "emotion": "Sad",
+      "text": "I need more crystals. I always need more crystals."
+    },
+    {
+      "id": "id_rusk_01",
+      "speaker": "SFRusk",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "The specimen moved again. It isn't supposed to do that."
+    },
+    {
+      "id": "id_rusk_02",
+      "speaker": "SFRusk",
+      "cond": [],
+      "emotion": "Sad",
+      "text": "Note to self: stop naming the headcrabs."
+    },
+    {
+      "id": "id_rusk_03",
+      "speaker": "SFRusk",
+      "cond": [],
+      "emotion": "Puzzled",
+      "text": "Dosage, dosage... where did I write the dosage?"
+    },
+    {
+      "id": "id_rusk_04",
+      "speaker": "SFRusk",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Something scratched the vent last night. I'm sure of it."
+    },
+    {
+      "id": "id_rusk_05",
+      "speaker": "SFRusk",
+      "cond": [],
+      "emotion": "Sad",
+      "text": "Nobody listens until it's too late. Then everybody listens."
+    },
+    {
+      "id": "id_venn_01",
+      "speaker": "SFVenn",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "My kingdom for a roll of proper tape."
+    },
+    {
+      "id": "id_venn_02",
+      "speaker": "SFVenn",
+      "cond": [],
+      "emotion": "Puzzled",
+      "text": "These locals forge swords like artists and can't make a single screw."
+    },
+    {
+      "id": "id_venn_03",
+      "speaker": "SFVenn",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Generator two is humming in a key I don't like."
+    },
+    {
+      "id": "id_venn_04",
+      "speaker": "SFVenn",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "If it sparks, it's fine. If it stops sparking, run."
+    },
+    {
+      "id": "id_venn_05",
+      "speaker": "SFVenn",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "I fixed that yesterday. Why is it broken? Who touched it?"
+    },
+    {
+      "id": "id_pell_01",
+      "speaker": "SFPell",
+      "cond": [],
+      "emotion": "Sad",
+      "text": "Calibrate, log, calibrate, log... I dream in logs now."
+    },
+    {
+      "id": "id_pell_02",
+      "speaker": "SFPell",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Was that a noise? That was definitely a noise."
+    },
+    {
+      "id": "id_pell_03",
+      "speaker": "SFPell",
+      "cond": [],
+      "emotion": "Happy",
+      "text": "Please work. Please work. Oh good, it worked."
+    },
+    {
+      "id": "id_pell_04",
+      "speaker": "SFPell",
+      "cond": [],
+      "emotion": "Sad",
+      "text": "I should have stayed in theoretical studies."
+    },
+    {
+      "id": "id_pell_05",
+      "speaker": "SFPell",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Holt took credit for my numbers again. Of course he did."
+    },
+    {
+      "id": "id_holt_01",
+      "speaker": "SFHolt",
+      "cond": [],
+      "emotion": "Happy",
+      "text": "Senior Researcher Holt. Has a nice ring to it."
+    },
+    {
+      "id": "id_holt_02",
+      "speaker": "SFHolt",
+      "cond": [],
+      "emotion": "Disgust",
+      "text": "Hale's methods are sloppy. I'd have finished this weeks ago."
+    },
+    {
+      "id": "id_holt_03",
+      "speaker": "SFHolt",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Where are those readings? Does anyone here work except me?"
+    },
+    {
+      "id": "id_holt_04",
+      "speaker": "SFHolt",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "If I'd built the manipulator, it would fold up for travel."
+    },
+    {
+      "id": "id_holt_05",
+      "speaker": "SFHolt",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "Note: pitch my idea to the Director. Before Hale steals it."
+    },
+    {
+      "id": "id_mire_01",
+      "speaker": "SFMire",
+      "cond": [],
+      "emotion": "Puzzled",
+      "text": "Ysgramor sailed from Atmora, and nobody wrote down why he left. Same as us."
+    },
+    {
+      "id": "id_mire_02",
+      "speaker": "SFMire",
+      "cond": [],
+      "emotion": "Puzzled",
+      "text": "Sweetrolls. I still don't know what makes them so sweet. I've asked."
+    },
+    {
+      "id": "id_mire_03",
+      "speaker": "SFMire",
+      "cond": [],
+      "emotion": "Sad",
+      "text": "I wonder what my sister is doing right now."
+    },
+    {
+      "id": "id_mire_04",
+      "speaker": "SFMire",
+      "cond": [],
+      "emotion": "Happy",
+      "text": "The innkeeper in Riverwood called me 'friend.' Nice word."
+    },
+    {
+      "id": "id_mire_05",
+      "speaker": "SFMire",
+      "cond": [],
+      "emotion": "Sad",
+      "text": "Nords sing when they're sad. Maybe I should try that."
+    },
+    {
+      "id": "id_moran_01",
+      "speaker": "SFMoran",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "Eyes up. Something's always watching from that ridge."
+    },
+    {
+      "id": "id_moran_02",
+      "speaker": "SFMoran",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Somebody's armor isn't regulation. I'll find you."
+    },
+    {
+      "id": "id_moran_03",
+      "speaker": "SFMoran",
+      "cond": [],
+      "emotion": "Disgust",
+      "text": "Scientists. Can't protect them from themselves."
+    },
+    {
+      "id": "id_moran_04",
+      "speaker": "SFMoran",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "Fence line held last night. Small miracles."
+    },
+    {
+      "id": "id_moran_05",
+      "speaker": "SFMoran",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Who left the canister bay unlocked? I'll find out."
+    },
+    {
+      "id": "id_guardA_01",
+      "speaker": "GuardA",
+      "cond": [],
+      "emotion": "Sad",
+      "text": "Fourteen hours on. Ten to go. Lovely."
+    },
+    {
+      "id": "id_guardA_02",
+      "speaker": "GuardA",
+      "cond": [],
+      "emotion": "Puzzled",
+      "text": "I swear that rock just moved."
+    },
+    {
+      "id": "id_guardA_03",
+      "speaker": "GuardA",
+      "cond": [],
+      "emotion": "Puzzled",
+      "text": "Who decided white coats were a good idea in a crater?"
+    },
+    {
+      "id": "id_guardA_04",
+      "speaker": "GuardA",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "If one more scientist calls me 'officer person,' I'm quitting."
+    },
+    {
+      "id": "id_guardA_05",
+      "speaker": "GuardA",
+      "cond": [],
+      "emotion": "Disgust",
+      "text": "Smells like ozone and wet dog. Every single day."
+    },
+    {
+      "id": "id_guardA_06",
+      "speaker": "GuardA",
+      "cond": [],
+      "emotion": "Sad",
+      "text": "Wish I'd brought a warmer coat. Or a warmer world."
+    },
+    {
+      "id": "id_guardA_07",
+      "speaker": "GuardA",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "Note to self: never volunteer for anything ever again."
+    },
+    {
+      "id": "id_guardA_08",
+      "speaker": "GuardA",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "That's the third canister this week. Who's counting? Me."
+    },
+    {
+      "id": "id_guardA_09",
+      "speaker": "GuardA",
+      "cond": [],
+      "emotion": "Happy",
+      "text": "Somewhere a bard is singing about me. Probably badly."
+    },
+    {
+      "id": "id_guardA_10",
+      "speaker": "GuardA",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Quiet. Too quiet. I hate it when I say that."
+    },
+    {
+      "id": "id_guardB_01",
+      "speaker": "GuardB",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Whistling past the crater. Totally calm. Totally fine."
+    },
+    {
+      "id": "id_guardB_02",
+      "speaker": "GuardB",
+      "cond": [],
+      "emotion": "Sad",
+      "text": "Remember when the worst job was gate duty? Still is."
+    },
+    {
+      "id": "id_guardB_03",
+      "speaker": "GuardB",
+      "cond": [],
+      "emotion": "Puzzled",
+      "text": "The locals think we're mages. I've stopped correcting them."
+    },
+    {
+      "id": "id_guardB_04",
+      "speaker": "GuardB",
+      "cond": [],
+      "emotion": "Disgust",
+      "text": "My boots haven't been dry since the day we got here."
+    },
+    {
+      "id": "id_guardB_05",
+      "speaker": "GuardB",
+      "cond": [],
+      "emotion": "Disgust",
+      "text": "Headcrab in the mess hall again? No, wait. Just the stew."
+    },
+    {
+      "id": "id_guardB_06",
+      "speaker": "GuardB",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "Hey, crater. Do something interesting. Actually, don't."
+    },
+    {
+      "id": "id_guardB_07",
+      "speaker": "GuardB",
+      "cond": [],
+      "emotion": "Sad",
+      "text": "I could use a drink. Not mead. Anything but mead."
+    },
+    {
+      "id": "id_guardB_08",
+      "speaker": "GuardB",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "One more patrol and I'm sitting down. Captain or no Captain."
+    },
+    {
+      "id": "id_guardB_09",
+      "speaker": "GuardB",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Saw a fox chewing on a crystal. Fox seemed fine. I'm worried."
+    },
+    {
+      "id": "id_guardB_10",
+      "speaker": "GuardB",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Somebody tell that generator to stop groaning."
+    }
+  ],
+  "combat": [
+    {
+      "id": "cb_guardA_01",
+      "speaker": "GuardA",
+      "type": "Attack",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Stay down!"
+    },
+    {
+      "id": "cb_guardA_02",
+      "speaker": "GuardA",
+      "type": "Attack",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Back to the Hollow with you!"
+    },
+    {
+      "id": "cb_guardA_03",
+      "speaker": "GuardA",
+      "type": "Attack",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Hit it! Hit it again!"
+    },
+    {
+      "id": "cb_guardA_04",
+      "speaker": "GuardA",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Argh! I'm hit!"
+    },
+    {
+      "id": "cb_guardA_05",
+      "speaker": "GuardA",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "It bit me! It actually bit me!"
+    },
+    {
+      "id": "cb_guardA_06",
+      "speaker": "GuardA",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Ugh, that'll leave a mark."
+    },
+    {
+      "id": "cb_guardA_07",
+      "speaker": "GuardA",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Headcrab! Headcrab!"
+    },
+    {
+      "id": "cb_guardA_08",
+      "speaker": "GuardA",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Contact! Weapons up!"
+    },
+    {
+      "id": "cb_guardA_09",
+      "speaker": "GuardA",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Zombie at the fence!"
+    },
+    {
+      "id": "cb_guardA_10",
+      "speaker": "GuardA",
+      "type": "CombatToNormal",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "Clear. I think. Check it twice."
+    },
+    {
+      "id": "cb_guardA_11",
+      "speaker": "GuardA",
+      "type": "CombatToNormal",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "That's done. Somebody log it."
+    },
+    {
+      "id": "cb_guardA_12",
+      "speaker": "GuardA",
+      "type": "CombatToNormal",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "Area secure. For now."
+    },
+    {
+      "id": "cb_guardA_13",
+      "speaker": "GuardA",
+      "type": "LostToCombat",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "There you are!"
+    },
+    {
+      "id": "cb_guardA_14",
+      "speaker": "GuardA",
+      "type": "LostToCombat",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Found it! Over here!"
+    },
+    {
+      "id": "cb_guardA_15",
+      "speaker": "GuardA",
+      "type": "LostToCombat",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Back again? Bad idea."
+    },
+    {
+      "id": "cb_guardA_16",
+      "speaker": "GuardA",
+      "type": "DetectFriendDie",
+      "cond": [],
+      "emotion": "Sad",
+      "text": "Officer down! Officer down!"
+    },
+    {
+      "id": "cb_guardA_17",
+      "speaker": "GuardA",
+      "type": "DetectFriendDie",
+      "cond": [],
+      "emotion": "Sad",
+      "text": "They got one of ours!"
+    },
+    {
+      "id": "cb_guardA_18",
+      "speaker": "GuardA",
+      "type": "DetectFriendDie",
+      "cond": [],
+      "emotion": "Sad",
+      "text": "Get Rusk! Somebody get Rusk!"
+    },
+    {
+      "id": "cb_guardA_19",
+      "speaker": "GuardA",
+      "type": "Flee",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Fall back! Fall back!"
+    },
+    {
+      "id": "cb_guardA_20",
+      "speaker": "GuardA",
+      "type": "Flee",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "I'm not paid enough for this!"
+    },
+    {
+      "id": "cb_guardA_21",
+      "speaker": "GuardA",
+      "type": "NormalToAlert",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Hold up. Something's here."
+    },
+    {
+      "id": "cb_guardA_22",
+      "speaker": "GuardA",
+      "type": "NormalToAlert",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Who's there? Show yourself!"
+    },
+    {
+      "id": "cb_guardA_23",
+      "speaker": "GuardA",
+      "type": "CombatToLost",
+      "cond": [],
+      "emotion": "Puzzled",
+      "text": "It slipped into the shadows."
+    },
+    {
+      "id": "cb_guardA_24",
+      "speaker": "GuardA",
+      "type": "CombatToLost",
+      "cond": [],
+      "emotion": "Puzzled",
+      "text": "Lost sight of it! Spread out!"
+    },
+    {
+      "id": "cb_guardB_01",
+      "speaker": "GuardB",
+      "type": "Attack",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Go back where you came from!"
+    },
+    {
+      "id": "cb_guardB_02",
+      "speaker": "GuardB",
+      "type": "Attack",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Keep it pinned!"
+    },
+    {
+      "id": "cb_guardB_03",
+      "speaker": "GuardB",
+      "type": "Attack",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Down you go!"
+    },
+    {
+      "id": "cb_guardB_04",
+      "speaker": "GuardB",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Gah! It got my arm!"
+    },
+    {
+      "id": "cb_guardB_05",
+      "speaker": "GuardB",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Ow! Watch it!"
+    },
+    {
+      "id": "cb_guardB_06",
+      "speaker": "GuardB",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Ugh, I felt that through the armor."
+    },
+    {
+      "id": "cb_guardB_07",
+      "speaker": "GuardB",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Movement! Weapons free!"
+    },
+    {
+      "id": "cb_guardB_08",
+      "speaker": "GuardB",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Headcrab on the floor!"
+    },
+    {
+      "id": "cb_guardB_09",
+      "speaker": "GuardB",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Zombie! It's a zombie!"
+    },
+    {
+      "id": "cb_guardB_10",
+      "speaker": "GuardB",
+      "type": "CombatToNormal",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "Clear. Somebody check my helmet for crabs."
+    },
+    {
+      "id": "cb_guardB_11",
+      "speaker": "GuardB",
+      "type": "CombatToNormal",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "That's the last of them. Hopefully."
+    },
+    {
+      "id": "cb_guardB_12",
+      "speaker": "GuardB",
+      "type": "CombatToNormal",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "Okay. Breathe. We're fine."
+    },
+    {
+      "id": "cb_guardB_13",
+      "speaker": "GuardB",
+      "type": "LostToCombat",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Got you!"
+    },
+    {
+      "id": "cb_guardB_14",
+      "speaker": "GuardB",
+      "type": "LostToCombat",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Over here! It's over here!"
+    },
+    {
+      "id": "cb_guardB_15",
+      "speaker": "GuardB",
+      "type": "LostToCombat",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Thought you could hide? Wrong."
+    },
+    {
+      "id": "cb_guardB_16",
+      "speaker": "GuardB",
+      "type": "DetectFriendDie",
+      "cond": [],
+      "emotion": "Sad",
+      "text": "We lost one!"
+    },
+    {
+      "id": "cb_guardB_17",
+      "speaker": "GuardB",
+      "type": "DetectFriendDie",
+      "cond": [],
+      "emotion": "Sad",
+      "text": "No, no, not like this!"
+    },
+    {
+      "id": "cb_guardB_18",
+      "speaker": "GuardB",
+      "type": "DetectFriendDie",
+      "cond": [],
+      "emotion": "Sad",
+      "text": "Somebody tell the Captain. We lost one."
+    },
+    {
+      "id": "cb_guardB_19",
+      "speaker": "GuardB",
+      "type": "Flee",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "I'm out! Cover me!"
+    },
+    {
+      "id": "cb_guardB_20",
+      "speaker": "GuardB",
+      "type": "Flee",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Retreat! Get to the bunker!"
+    },
+    {
+      "id": "cb_guardB_21",
+      "speaker": "GuardB",
+      "type": "NormalToAlert",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Did you hear that?"
+    },
+    {
+      "id": "cb_guardB_22",
+      "speaker": "GuardB",
+      "type": "NormalToAlert",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Something's moving out there."
+    },
+    {
+      "id": "cb_guardB_23",
+      "speaker": "GuardB",
+      "type": "CombatToLost",
+      "cond": [],
+      "emotion": "Puzzled",
+      "text": "Where'd it go?"
+    },
+    {
+      "id": "cb_guardB_24",
+      "speaker": "GuardB",
+      "type": "CombatToLost",
+      "cond": [],
+      "emotion": "Puzzled",
+      "text": "Lost it. Keep your eyes sharp."
+    },
+    {
+      "id": "cb_moran_01",
+      "speaker": "SFMoran",
+      "type": "Attack",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Put it down and keep it down!"
+    },
+    {
+      "id": "cb_moran_02",
+      "speaker": "SFMoran",
+      "type": "Attack",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Hit it hard, people!"
+    },
+    {
+      "id": "cb_moran_03",
+      "speaker": "SFMoran",
+      "type": "Attack",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Not on my watch!"
+    },
+    {
+      "id": "cb_moran_04",
+      "speaker": "SFMoran",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "That all you've got?"
+    },
+    {
+      "id": "cb_moran_05",
+      "speaker": "SFMoran",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Gah! Hold the line!"
+    },
+    {
+      "id": "cb_moran_06",
+      "speaker": "SFMoran",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Just a scratch. Keep fighting!"
+    },
+    {
+      "id": "cb_moran_07",
+      "speaker": "SFMoran",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Contact! Form up on me!"
+    },
+    {
+      "id": "cb_moran_08",
+      "speaker": "SFMoran",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Hostiles inside the fence!"
+    },
+    {
+      "id": "cb_moran_09",
+      "speaker": "SFMoran",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Headcrabs! Protect the scientists!"
+    },
+    {
+      "id": "cb_moran_10",
+      "speaker": "SFMoran",
+      "type": "CombatToNormal",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "Area clear. Report injuries."
+    },
+    {
+      "id": "cb_moran_11",
+      "speaker": "SFMoran",
+      "type": "CombatToNormal",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "Good work. Burn the bodies."
+    },
+    {
+      "id": "cb_moran_12",
+      "speaker": "SFMoran",
+      "type": "CombatToNormal",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "Stand down. Stay sharp."
+    },
+    {
+      "id": "cb_moran_13",
+      "speaker": "SFMoran",
+      "type": "LostToCombat",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "There! Take it!"
+    },
+    {
+      "id": "cb_moran_14",
+      "speaker": "SFMoran",
+      "type": "LostToCombat",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Found it. Converge on me!"
+    },
+    {
+      "id": "cb_moran_15",
+      "speaker": "SFMoran",
+      "type": "LostToCombat",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Got eyes on it!"
+    },
+    {
+      "id": "cb_moran_16",
+      "speaker": "SFMoran",
+      "type": "DetectFriendDie",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Officer down! Cover them!"
+    },
+    {
+      "id": "cb_moran_17",
+      "speaker": "SFMoran",
+      "type": "DetectFriendDie",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "No! Not another one!"
+    },
+    {
+      "id": "cb_moran_18",
+      "speaker": "SFMoran",
+      "type": "DetectFriendDie",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "They'll pay for that. Push!"
+    },
+    {
+      "id": "cb_moran_19",
+      "speaker": "SFMoran",
+      "type": "Flee",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Fall back to the gate!"
+    },
+    {
+      "id": "cb_moran_20",
+      "speaker": "SFMoran",
+      "type": "Flee",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Regroup! Fall back!"
+    },
+    {
+      "id": "cb_moran_21",
+      "speaker": "SFMoran",
+      "type": "NormalToAlert",
+      "cond": [],
+      "emotion": "Neutral",
+      "text": "Quiet. Something's out there."
+    },
+    {
+      "id": "cb_moran_22",
+      "speaker": "SFMoran",
+      "type": "CombatToLost",
+      "cond": [],
+      "emotion": "Anger",
+      "text": "Spread out. Find it."
+    },
+    {
+      "id": "cb_kast_01",
+      "speaker": "SFKast",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Security! To the lab, now!"
+    },
+    {
+      "id": "cb_kast_02",
+      "speaker": "SFKast",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Contain it! Someone contain it!"
+    },
+    {
+      "id": "cb_kast_03",
+      "speaker": "SFKast",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Ugh! Unacceptable!"
+    },
+    {
+      "id": "cb_kast_04",
+      "speaker": "SFKast",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "My arm... ugh."
+    },
+    {
+      "id": "cb_kast_05",
+      "speaker": "SFKast",
+      "type": "Flee",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "I'll be in my office. Locked."
+    },
+    {
+      "id": "cb_kast_06",
+      "speaker": "SFKast",
+      "type": "Flee",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Security will handle this. Not me."
+    },
+    {
+      "id": "cb_hale_01",
+      "speaker": "SFHale",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Oh, that's a big one! Where's my manipulator?"
+    },
+    {
+      "id": "cb_hale_02",
+      "speaker": "SFHale",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Incoming! Somebody fire something!"
+    },
+    {
+      "id": "cb_hale_03",
+      "speaker": "SFHale",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Ow! Okay, that one hurt!"
+    },
+    {
+      "id": "cb_hale_04",
+      "speaker": "SFHale",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Ugh, right in the ribs!"
+    },
+    {
+      "id": "cb_hale_05",
+      "speaker": "SFHale",
+      "type": "Flee",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Tactical retreat! Very tactical!"
+    },
+    {
+      "id": "cb_hale_06",
+      "speaker": "SFHale",
+      "type": "Flee",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "I'll come back with something bigger!"
+    },
+    {
+      "id": "cb_rusk_01",
+      "speaker": "SFRusk",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "No, no, no, it's loose!"
+    },
+    {
+      "id": "cb_rusk_02",
+      "speaker": "SFRusk",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Headcrab! Cover your heads!"
+    },
+    {
+      "id": "cb_rusk_03",
+      "speaker": "SFRusk",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Ah! Don't let it bite!"
+    },
+    {
+      "id": "cb_rusk_04",
+      "speaker": "SFRusk",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "I'm hurt... where are my gloves?"
+    },
+    {
+      "id": "cb_rusk_05",
+      "speaker": "SFRusk",
+      "type": "Flee",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "I knew this would happen! I knew it!"
+    },
+    {
+      "id": "cb_rusk_06",
+      "speaker": "SFRusk",
+      "type": "Flee",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Lock the doors behind me!"
+    },
+    {
+      "id": "cb_venn_01",
+      "speaker": "SFVenn",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Oh, great. Something else to fix."
+    },
+    {
+      "id": "cb_venn_02",
+      "speaker": "SFVenn",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Security! We've got company!"
+    },
+    {
+      "id": "cb_venn_03",
+      "speaker": "SFVenn",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Ow! Watch the hands, I need those!"
+    },
+    {
+      "id": "cb_venn_04",
+      "speaker": "SFVenn",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Ugh. Worse than a live wire."
+    },
+    {
+      "id": "cb_venn_05",
+      "speaker": "SFVenn",
+      "type": "Flee",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Nope. I'm out."
+    },
+    {
+      "id": "cb_venn_06",
+      "speaker": "SFVenn",
+      "type": "Flee",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "I'll be hiding in the generator room."
+    },
+    {
+      "id": "cb_pell_01",
+      "speaker": "SFPell",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "It's here! It's here!"
+    },
+    {
+      "id": "cb_pell_02",
+      "speaker": "SFPell",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Help! Somebody, anybody!"
+    },
+    {
+      "id": "cb_pell_03",
+      "speaker": "SFPell",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Aah! It got me!"
+    },
+    {
+      "id": "cb_pell_04",
+      "speaker": "SFPell",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Ow, ow, ow!"
+    },
+    {
+      "id": "cb_pell_05",
+      "speaker": "SFPell",
+      "type": "Flee",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "I'm running! I'm running!"
+    },
+    {
+      "id": "cb_pell_06",
+      "speaker": "SFPell",
+      "type": "Flee",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Not again, not again!"
+    },
+    {
+      "id": "cb_holt_01",
+      "speaker": "SFHolt",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Security! Earn your pay!"
+    },
+    {
+      "id": "cb_holt_02",
+      "speaker": "SFHolt",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Get it away from the equipment!"
+    },
+    {
+      "id": "cb_holt_03",
+      "speaker": "SFHolt",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Hey! I'm important!"
+    },
+    {
+      "id": "cb_holt_04",
+      "speaker": "SFHolt",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Ugh, this coat was new!"
+    },
+    {
+      "id": "cb_holt_05",
+      "speaker": "SFHolt",
+      "type": "Flee",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Someone else handle it!"
+    },
+    {
+      "id": "cb_holt_06",
+      "speaker": "SFHolt",
+      "type": "Flee",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "I'm far too valuable for this!"
+    },
+    {
+      "id": "cb_mire_01",
+      "speaker": "SFMire",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "By the Nine! That's what they say, right? By the Nine!"
+    },
+    {
+      "id": "cb_mire_02",
+      "speaker": "SFMire",
+      "type": "AlertToCombat",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Oh no. Guards! Guards!"
+    },
+    {
+      "id": "cb_mire_03",
+      "speaker": "SFMire",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Oh! That stings!"
+    },
+    {
+      "id": "cb_mire_04",
+      "speaker": "SFMire",
+      "type": "Hit",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Please, stop!"
+    },
+    {
+      "id": "cb_mire_05",
+      "speaker": "SFMire",
+      "type": "Flee",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "Run! Everyone run!"
+    },
+    {
+      "id": "cb_mire_06",
+      "speaker": "SFMire",
+      "type": "Flee",
+      "cond": [],
+      "emotion": "Fear",
+      "text": "I'm going, I'm going!"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "cv_kast_hale_01",
+      "a": "SFKast",
+      "b": "SFHale",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_kast_hale_01_1",
+          "emotion": "Neutral",
+          "text": "You pushed the array to ninety percent last night."
+        },
+        {
+          "who": "b",
+          "id": "cv_kast_hale_01_2",
+          "emotion": "Happy",
+          "text": "Ninety two. And nothing exploded. You're welcome."
+        },
+        {
+          "who": "a",
+          "id": "cv_kast_hale_01_3",
+          "emotion": "Anger",
+          "text": "Nothing exploded this time. The logs are not a dare, Marcus."
+        },
+        {
+          "who": "b",
+          "id": "cv_kast_hale_01_4",
+          "emotion": "Neutral",
+          "text": "Then stop writing them like one."
+        }
+      ]
+    },
+    {
+      "id": "cv_kast_hale_02",
+      "a": "SFKast",
+      "b": "SFHale",
+      "minStage": 0,
+      "maxStage": 39,
+      "lines": [
+        {
+          "who": "b",
+          "id": "cv_kast_hale_02_1",
+          "emotion": "Happy",
+          "text": "Give me one full cycle at peak resonance. Just one."
+        },
+        {
+          "who": "a",
+          "id": "cv_kast_hale_02_2",
+          "emotion": "Neutral",
+          "text": "The last full cycle gave us Incident Seven."
+        },
+        {
+          "who": "b",
+          "id": "cv_kast_hale_02_3",
+          "emotion": "Neutral",
+          "text": "That was containment. My chamber held fine."
+        },
+        {
+          "who": "a",
+          "id": "cv_kast_hale_02_4",
+          "emotion": "Puzzled",
+          "text": "How comforting for your chamber."
+        }
+      ]
+    },
+    {
+      "id": "cv_hale_kast_03",
+      "a": "SFHale",
+      "b": "SFKast",
+      "minStage": 40,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_hale_kast_03_1",
+          "emotion": "Anger",
+          "text": "Rusk says you sealed Wing B with people inside. Tell me he's lying."
+        },
+        {
+          "who": "b",
+          "id": "cv_hale_kast_03_2",
+          "emotion": "Sad",
+          "text": "Rusk is many things. A liar is not one of them."
+        },
+        {
+          "who": "a",
+          "id": "cv_hale_kast_03_3",
+          "emotion": "Anger",
+          "text": "I built half this place for you, Aurelius."
+        },
+        {
+          "who": "b",
+          "id": "cv_hale_kast_03_4",
+          "emotion": "Neutral",
+          "text": "And I kept the other half standing. Pick which half you'd rather lose."
+        }
+      ]
+    },
+    {
+      "id": "cv_hale_venn_01",
+      "a": "SFHale",
+      "b": "SFVenn",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_hale_venn_01_1",
+          "emotion": "Neutral",
+          "text": "Venn, I need the capacitor bank at full charge by noon."
+        },
+        {
+          "who": "b",
+          "id": "cv_hale_venn_01_2",
+          "emotion": "Anger",
+          "text": "And I need a screwdriver that isn't a sharpened spoon."
+        },
+        {
+          "who": "a",
+          "id": "cv_hale_venn_01_3",
+          "emotion": "Puzzled",
+          "text": "So can you do it?"
+        },
+        {
+          "who": "b",
+          "id": "cv_hale_venn_01_4",
+          "emotion": "Neutral",
+          "text": "Of course I can do it. I'm just going to complain the whole time."
+        }
+      ]
+    },
+    {
+      "id": "cv_venn_kast_01",
+      "a": "SFVenn",
+      "b": "SFKast",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_venn_kast_01_1",
+          "emotion": "Anger",
+          "text": "I put in for copper wire. Three weeks ago."
+        },
+        {
+          "who": "b",
+          "id": "cv_venn_kast_01_2",
+          "emotion": "Neutral",
+          "text": "The supply rift is unreliable. You know this."
+        },
+        {
+          "who": "a",
+          "id": "cv_venn_kast_01_3",
+          "emotion": "Neutral",
+          "text": "So I traded a Riverwood smith for some. He wanted a lantern."
+        },
+        {
+          "who": "b",
+          "id": "cv_venn_kast_01_4",
+          "emotion": "Surprise",
+          "text": "You gave a local our technology?"
+        },
+        {
+          "who": "a",
+          "id": "cv_venn_kast_01_5",
+          "emotion": "Anger",
+          "text": "I gave him a lantern, Director. It's a lantern."
+        }
+      ]
+    },
+    {
+      "id": "cv_rusk_kast_01",
+      "a": "SFRusk",
+      "b": "SFKast",
+      "minStage": 0,
+      "maxStage": 39,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_rusk_kast_01_1",
+          "emotion": "Fear",
+          "text": "The specimens react to the array cycles. Every single time."
+        },
+        {
+          "who": "b",
+          "id": "cv_rusk_kast_01_2",
+          "emotion": "Neutral",
+          "text": "Correlation, Emil. Not causation."
+        },
+        {
+          "who": "a",
+          "id": "cv_rusk_kast_01_3",
+          "emotion": "Fear",
+          "text": "They turn toward the Test Chamber. All of them. At once."
+        },
+        {
+          "who": "b",
+          "id": "cv_rusk_kast_01_4",
+          "emotion": "Neutral",
+          "text": "Then write it up. Quietly."
+        }
+      ]
+    },
+    {
+      "id": "cv_hale_rusk_01",
+      "a": "SFHale",
+      "b": "SFRusk",
+      "minStage": 0,
+      "maxStage": 39,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_hale_rusk_01_1",
+          "emotion": "Happy",
+          "text": "Emil! Want to see a crystal sing at eighty percent?"
+        },
+        {
+          "who": "b",
+          "id": "cv_hale_rusk_01_2",
+          "emotion": "Fear",
+          "text": "I'd rather see it sleep at zero."
+        },
+        {
+          "who": "a",
+          "id": "cv_hale_rusk_01_3",
+          "emotion": "Puzzled",
+          "text": "Where's your sense of wonder?"
+        },
+        {
+          "who": "b",
+          "id": "cv_hale_rusk_01_4",
+          "emotion": "Sad",
+          "text": "In Wing B. Behind a sealed door."
+        }
+      ]
+    },
+    {
+      "id": "cv_mire_rusk_01",
+      "a": "SFMire",
+      "b": "SFRusk",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_mire_rusk_01_1",
+          "emotion": "Sad",
+          "text": "Doctor, are you all right? You've barely eaten."
+        },
+        {
+          "who": "b",
+          "id": "cv_mire_rusk_01_2",
+          "emotion": "Fear",
+          "text": "I keep dreaming about the vents, Ollan."
+        },
+        {
+          "who": "a",
+          "id": "cv_mire_rusk_01_3",
+          "emotion": "Neutral",
+          "text": "My grandmother said bad dreams are just the mind cleaning house."
+        },
+        {
+          "who": "b",
+          "id": "cv_mire_rusk_01_4",
+          "emotion": "Sad",
+          "text": "Then my house is very, very dirty."
+        }
+      ]
+    },
+    {
+      "id": "cv_holt_pell_01",
+      "a": "SFHolt",
+      "b": "SFPell",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_holt_pell_01_1",
+          "emotion": "Happy",
+          "text": "Did you hear? Hale singed his eyebrows off again."
+        },
+        {
+          "who": "b",
+          "id": "cv_holt_pell_01_2",
+          "emotion": "Surprise",
+          "text": "Again? That's the third time this month."
+        },
+        {
+          "who": "a",
+          "id": "cv_holt_pell_01_3",
+          "emotion": "Neutral",
+          "text": "If I ran the chamber, nobody would lose any eyebrows."
+        },
+        {
+          "who": "b",
+          "id": "cv_holt_pell_01_4",
+          "emotion": "Sad",
+          "text": "You'd make me run the chamber, and I'd lose mine."
+        },
+        {
+          "who": "a",
+          "id": "cv_holt_pell_01_5",
+          "emotion": "Happy",
+          "text": "Delegation, Jory. It's a leadership skill."
+        }
+      ]
+    },
+    {
+      "id": "cv_pell_mire_01",
+      "a": "SFPell",
+      "b": "SFMire",
+      "minStage": 0,
+      "maxStage": 39,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_pell_mire_01_1",
+          "emotion": "Fear",
+          "text": "Do you think there were people in Wing B when it sealed?"
+        },
+        {
+          "who": "b",
+          "id": "cv_pell_mire_01_2",
+          "emotion": "Neutral",
+          "text": "The roster said it was empty. Rosters don't lie."
+        },
+        {
+          "who": "a",
+          "id": "cv_pell_mire_01_3",
+          "emotion": "Fear",
+          "text": "Rosters get written by people, Ollan."
+        },
+        {
+          "who": "b",
+          "id": "cv_pell_mire_01_4",
+          "emotion": "Sad",
+          "text": "Let's not talk about it here."
+        }
+      ]
+    },
+    {
+      "id": "cv_holt_mire_01",
+      "a": "SFHolt",
+      "b": "SFMire",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_holt_mire_01_1",
+          "emotion": "Disgust",
+          "text": "You actually read those Nord books? They're all about axes."
+        },
+        {
+          "who": "b",
+          "id": "cv_holt_mire_01_2",
+          "emotion": "Neutral",
+          "text": "Not all of them. Some are about bears. And honor."
+        },
+        {
+          "who": "a",
+          "id": "cv_holt_mire_01_3",
+          "emotion": "Neutral",
+          "text": "Honor won't calibrate a resonance array."
+        },
+        {
+          "who": "b",
+          "id": "cv_holt_mire_01_4",
+          "emotion": "Happy",
+          "text": "Neither will you, from what Hale says."
+        }
+      ]
+    },
+    {
+      "id": "cv_pell_venn_01",
+      "a": "SFPell",
+      "b": "SFVenn",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_pell_venn_01_1",
+          "emotion": "Fear",
+          "text": "Mister Venn, the light in my lab keeps flickering."
+        },
+        {
+          "who": "b",
+          "id": "cv_pell_venn_01_2",
+          "emotion": "Puzzled",
+          "text": "Does it flicker, or does it strobe?"
+        },
+        {
+          "who": "a",
+          "id": "cv_pell_venn_01_3",
+          "emotion": "Puzzled",
+          "text": "Is there a difference?"
+        },
+        {
+          "who": "b",
+          "id": "cv_pell_venn_01_4",
+          "emotion": "Neutral",
+          "text": "One is annoying. The other means move your desk. Now."
+        }
+      ]
+    },
+    {
+      "id": "cv_mire_venn_01",
+      "a": "SFMire",
+      "b": "SFVenn",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_mire_venn_01_1",
+          "emotion": "Surprise",
+          "text": "A woman in Riverwood lit a candle with her finger today."
+        },
+        {
+          "who": "b",
+          "id": "cv_mire_venn_01_2",
+          "emotion": "Puzzled",
+          "text": "With what? A flint up her sleeve?"
+        },
+        {
+          "who": "a",
+          "id": "cv_mire_venn_01_3",
+          "emotion": "Puzzled",
+          "text": "Nothing. Just her finger."
+        },
+        {
+          "who": "b",
+          "id": "cv_mire_venn_01_4",
+          "emotion": "Anger",
+          "text": "Great. They get free fire, and I can't even get a fuse."
+        }
+      ]
+    },
+    {
+      "id": "cv_moran_kast_01",
+      "a": "SFMoran",
+      "b": "SFKast",
+      "minStage": 0,
+      "maxStage": 39,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_moran_kast_01_1",
+          "emotion": "Neutral",
+          "text": "Two more canisters spotted near the north ridge."
+        },
+        {
+          "who": "b",
+          "id": "cv_moran_kast_01_2",
+          "emotion": "Neutral",
+          "text": "Retrieve them. Discreetly."
+        },
+        {
+          "who": "a",
+          "id": "cv_moran_kast_01_3",
+          "emotion": "Anger",
+          "text": "My people aren't hounds, Director. They bleed."
+        },
+        {
+          "who": "b",
+          "id": "cv_moran_kast_01_4",
+          "emotion": "Neutral",
+          "text": "Then send the ones who bleed least."
+        },
+        {
+          "who": "a",
+          "id": "cv_moran_kast_01_5",
+          "emotion": "Disgust",
+          "text": "I'll pretend you didn't say that."
+        }
+      ]
+    },
+    {
+      "id": "cv_moran_kast_02",
+      "a": "SFMoran",
+      "b": "SFKast",
+      "minStage": 40,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_moran_kast_02_1",
+          "emotion": "Anger",
+          "text": "You told me Wing B was empty."
+        },
+        {
+          "who": "b",
+          "id": "cv_moran_kast_02_2",
+          "emotion": "Neutral",
+          "text": "I told you what you needed to hold the line."
+        },
+        {
+          "who": "a",
+          "id": "cv_moran_kast_02_3",
+          "emotion": "Anger",
+          "text": "My officers were on that door. They heard the knocking."
+        },
+        {
+          "who": "b",
+          "id": "cv_moran_kast_02_4",
+          "emotion": "Sad",
+          "text": "So did I, Captain. So did I."
+        }
+      ]
+    },
+    {
+      "id": "cv_moran_guardA_01",
+      "a": "SFMoran",
+      "b": "GuardA",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_moran_guardA_01_1",
+          "emotion": "Neutral",
+          "text": "Listen up. Headcrabs like the ventilation. Check the grates every hour."
+        },
+        {
+          "who": "b",
+          "id": "cv_moran_guardA_01_2",
+          "emotion": "Puzzled",
+          "text": "Every hour, Captain? They're very small grates."
+        },
+        {
+          "who": "a",
+          "id": "cv_moran_guardA_01_3",
+          "emotion": "Anger",
+          "text": "And very small headcrabs fit through them. Every hour."
+        }
+      ]
+    },
+    {
+      "id": "cv_moran_guardB_01",
+      "a": "SFMoran",
+      "b": "GuardB",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_moran_guardB_01_1",
+          "emotion": "Neutral",
+          "text": "Nobody fraternizes with the locals while on duty."
+        },
+        {
+          "who": "b",
+          "id": "cv_moran_guardB_01_2",
+          "emotion": "Puzzled",
+          "text": "What about off duty, Captain?"
+        },
+        {
+          "who": "a",
+          "id": "cv_moran_guardB_01_3",
+          "emotion": "Neutral",
+          "text": "Off duty, you sleep. That's an order."
+        },
+        {
+          "who": "b",
+          "id": "cv_moran_guardB_01_4",
+          "emotion": "Sad",
+          "text": "Understood. Sleep. Not mead."
+        }
+      ]
+    },
+    {
+      "id": "cv_moran_guardA_02",
+      "a": "SFMoran",
+      "b": "GuardA",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_moran_guardA_02_1",
+          "emotion": "Neutral",
+          "text": "If a scientist tells you something is safe, what do you do?"
+        },
+        {
+          "who": "b",
+          "id": "cv_moran_guardA_02_2",
+          "emotion": "Neutral",
+          "text": "Assume it isn't, Captain."
+        },
+        {
+          "who": "a",
+          "id": "cv_moran_guardA_02_3",
+          "emotion": "Neutral",
+          "text": "And if they say it's dangerous?"
+        },
+        {
+          "who": "b",
+          "id": "cv_moran_guardA_02_4",
+          "emotion": "Fear",
+          "text": "Run, Captain."
+        },
+        {
+          "who": "a",
+          "id": "cv_moran_guardA_02_5",
+          "emotion": "Happy",
+          "text": "Good. You'll outlive most of them."
+        }
+      ]
+    },
+    {
+      "id": "cv_guards_01",
+      "a": "GuardA",
+      "b": "GuardB",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_guards_01_1",
+          "emotion": "Sad",
+          "text": "You ever think about going home?"
+        },
+        {
+          "who": "b",
+          "id": "cv_guards_01_2",
+          "emotion": "Sad",
+          "text": "Every day. Twice before breakfast."
+        },
+        {
+          "who": "a",
+          "id": "cv_guards_01_3",
+          "emotion": "Puzzled",
+          "text": "Think they'll ever open the rift for a ride back?"
+        },
+        {
+          "who": "b",
+          "id": "cv_guards_01_4",
+          "emotion": "Disgust",
+          "text": "They can't even open the canteen on time."
+        }
+      ]
+    },
+    {
+      "id": "cv_guards_02",
+      "a": "GuardA",
+      "b": "GuardB",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_guards_02_1",
+          "emotion": "Surprise",
+          "text": "Saw a dragon over the mountains this morning."
+        },
+        {
+          "who": "b",
+          "id": "cv_guards_02_2",
+          "emotion": "Puzzled",
+          "text": "A real one?"
+        },
+        {
+          "who": "a",
+          "id": "cv_guards_02_3",
+          "emotion": "Neutral",
+          "text": "No, a painted one. Yes, a real one."
+        },
+        {
+          "who": "b",
+          "id": "cv_guards_02_4",
+          "emotion": "Fear",
+          "text": "And we're guarding a giant glowing crater. Perfect."
+        }
+      ]
+    },
+    {
+      "id": "cv_guards_03",
+      "a": "GuardB",
+      "b": "GuardA",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_guards_03_1",
+          "emotion": "Neutral",
+          "text": "Tried the mead in Riverwood on my day off."
+        },
+        {
+          "who": "b",
+          "id": "cv_guards_03_2",
+          "emotion": "Puzzled",
+          "text": "And?"
+        },
+        {
+          "who": "a",
+          "id": "cv_guards_03_3",
+          "emotion": "Sad",
+          "text": "Woke up in a barn. Next to a goat. Wearing my helmet."
+        },
+        {
+          "who": "b",
+          "id": "cv_guards_03_4",
+          "emotion": "Puzzled",
+          "text": "The goat, or you?"
+        },
+        {
+          "who": "a",
+          "id": "cv_guards_03_5",
+          "emotion": "Disgust",
+          "text": "I'd rather not say."
+        }
+      ]
+    },
+    {
+      "id": "cv_guards_04",
+      "a": "GuardA",
+      "b": "GuardB",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_guards_04_1",
+          "emotion": "Anger",
+          "text": "Holt asked me to carry his notes. His notes."
+        },
+        {
+          "who": "b",
+          "id": "cv_guards_04_2",
+          "emotion": "Puzzled",
+          "text": "Did you?"
+        },
+        {
+          "who": "a",
+          "id": "cv_guards_04_3",
+          "emotion": "Happy",
+          "text": "I carried them. Straight into the brazier."
+        },
+        {
+          "who": "b",
+          "id": "cv_guards_04_4",
+          "emotion": "Happy",
+          "text": "Officer of the month."
+        }
+      ]
+    },
+    {
+      "id": "cv_guards_05",
+      "a": "GuardA",
+      "b": "GuardB",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_guards_05_1",
+          "emotion": "Puzzled",
+          "text": "What's worse, a headcrab or a zombie?"
+        },
+        {
+          "who": "b",
+          "id": "cv_guards_05_2",
+          "emotion": "Neutral",
+          "text": "Headcrab. A zombie's just a headcrab with a commute."
+        },
+        {
+          "who": "a",
+          "id": "cv_guards_05_3",
+          "emotion": "Disgust",
+          "text": "I really didn't need that picture in my head."
+        }
+      ]
+    },
+    {
+      "id": "cv_guards_06",
+      "a": "GuardA",
+      "b": "GuardB",
+      "minStage": 40,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_guards_06_1",
+          "emotion": "Sad",
+          "text": "You hear what Rusk found? About Wing B?"
+        },
+        {
+          "who": "b",
+          "id": "cv_guards_06_2",
+          "emotion": "Anger",
+          "text": "Everyone's heard. The Director sealed it with people inside."
+        },
+        {
+          "who": "a",
+          "id": "cv_guards_06_3",
+          "emotion": "Sad",
+          "text": "And we stood guard while they knocked."
+        },
+        {
+          "who": "b",
+          "id": "cv_guards_06_4",
+          "emotion": "Sad",
+          "text": "We didn't know. Keep telling yourself that. I do."
+        }
+      ]
+    },
+    {
+      "id": "cv_guards_07",
+      "a": "GuardA",
+      "b": "GuardB",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_guards_07_1",
+          "emotion": "Surprise",
+          "text": "There's a giant herding mammoths near the north fence."
+        },
+        {
+          "who": "b",
+          "id": "cv_guards_07_2",
+          "emotion": "Fear",
+          "text": "Did it notice us?"
+        },
+        {
+          "who": "a",
+          "id": "cv_guards_07_3",
+          "emotion": "Neutral",
+          "text": "It waved."
+        },
+        {
+          "who": "b",
+          "id": "cv_guards_07_4",
+          "emotion": "Puzzled",
+          "text": "Should we have waved back?"
+        },
+        {
+          "who": "a",
+          "id": "cv_guards_07_5",
+          "emotion": "Neutral",
+          "text": "I did. Seemed polite."
+        }
+      ]
+    },
+    {
+      "id": "cv_holt_hale_01",
+      "a": "SFHolt",
+      "b": "SFHale",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_holt_hale_01_1",
+          "emotion": "Neutral",
+          "text": "Dr. Hale, I reviewed your calibration notes. I have suggestions."
+        },
+        {
+          "who": "b",
+          "id": "cv_holt_hale_01_2",
+          "emotion": "Puzzled",
+          "text": "Have you built anything that can lift a cart, Holt?"
+        },
+        {
+          "who": "a",
+          "id": "cv_holt_hale_01_3",
+          "emotion": "Sad",
+          "text": "Not yet."
+        },
+        {
+          "who": "b",
+          "id": "cv_holt_hale_01_4",
+          "emotion": "Happy",
+          "text": "Then your suggestions can wait in line behind the cart."
+        }
+      ]
+    },
+    {
+      "id": "cv_hale_pell_01",
+      "a": "SFHale",
+      "b": "SFPell",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_hale_pell_01_1",
+          "emotion": "Happy",
+          "text": "Pell! Readings on crystal four?"
+        },
+        {
+          "who": "b",
+          "id": "cv_hale_pell_01_2",
+          "emotion": "Puzzled",
+          "text": "It's humming at a pitch I can taste, sir."
+        },
+        {
+          "who": "a",
+          "id": "cv_hale_pell_01_3",
+          "emotion": "Happy",
+          "text": "Excellent! Write that down. Exactly that."
+        },
+        {
+          "who": "b",
+          "id": "cv_hale_pell_01_4",
+          "emotion": "Puzzled",
+          "text": "Taste, sir?"
+        },
+        {
+          "who": "a",
+          "id": "cv_hale_pell_01_5",
+          "emotion": "Happy",
+          "text": "Science is a full body experience, Jory."
+        }
+      ]
+    },
+    {
+      "id": "cv_venn_rusk_01",
+      "a": "SFVenn",
+      "b": "SFRusk",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_venn_rusk_01_1",
+          "emotion": "Neutral",
+          "text": "The crater floor sank another inch this month."
+        },
+        {
+          "who": "b",
+          "id": "cv_venn_rusk_01_2",
+          "emotion": "Fear",
+          "text": "Is that structural, or is something underneath?"
+        },
+        {
+          "who": "a",
+          "id": "cv_venn_rusk_01_3",
+          "emotion": "Neutral",
+          "text": "I'm an engineer. I only answer the first kind of question."
+        },
+        {
+          "who": "b",
+          "id": "cv_venn_rusk_01_4",
+          "emotion": "Fear",
+          "text": "Then who answers the second kind?"
+        }
+      ]
+    },
+    {
+      "id": "cv_kast_mire_01",
+      "a": "SFKast",
+      "b": "SFMire",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_kast_mire_01_1",
+          "emotion": "Neutral",
+          "text": "Mire, I hear you've been visiting Riverwood."
+        },
+        {
+          "who": "b",
+          "id": "cv_kast_mire_01_2",
+          "emotion": "Fear",
+          "text": "Only to trade, Director. And to read at the inn."
+        },
+        {
+          "who": "a",
+          "id": "cv_kast_mire_01_3",
+          "emotion": "Neutral",
+          "text": "Say nothing about the site. The locals already think we're star cultists."
+        },
+        {
+          "who": "b",
+          "id": "cv_kast_mire_01_4",
+          "emotion": "Puzzled",
+          "text": "They also call me 'the polite one.' I'd hate to ruin that."
+        }
+      ]
+    },
+    {
+      "id": "cv_pell_rusk_01",
+      "a": "SFPell",
+      "b": "SFRusk",
+      "minStage": 40,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_pell_rusk_01_1",
+          "emotion": "Fear",
+          "text": "Doctor, is it true? The journal, the people in Wing B?"
+        },
+        {
+          "who": "b",
+          "id": "cv_pell_rusk_01_2",
+          "emotion": "Sad",
+          "text": "It's true, Jory. I should have spoken sooner."
+        },
+        {
+          "who": "a",
+          "id": "cv_pell_rusk_01_3",
+          "emotion": "Puzzled",
+          "text": "Why didn't you?"
+        },
+        {
+          "who": "b",
+          "id": "cv_pell_rusk_01_4",
+          "emotion": "Sad",
+          "text": "Fear. The same reason you're whispering now."
+        }
+      ]
+    },
+    {
+      "id": "cv_venn_hale_02",
+      "a": "SFVenn",
+      "b": "SFHale",
+      "minStage": 50,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_venn_hale_02_1",
+          "emotion": "Puzzled",
+          "text": "So Kast is still in charge after all that?"
+        },
+        {
+          "who": "b",
+          "id": "cv_venn_hale_02_2",
+          "emotion": "Neutral",
+          "text": "The Directorate is far away. And nobody knows the array like him."
+        },
+        {
+          "who": "a",
+          "id": "cv_venn_hale_02_3",
+          "emotion": "Neutral",
+          "text": "Except you."
+        },
+        {
+          "who": "b",
+          "id": "cv_venn_hale_02_4",
+          "emotion": "Sad",
+          "text": "Except me. And I'm the one who kept pushing it."
+        }
+      ]
+    },
+    {
+      "id": "cv_holt_pell_02",
+      "a": "SFHolt",
+      "b": "SFPell",
+      "minStage": 40,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_holt_pell_02_1",
+          "emotion": "Neutral",
+          "text": "If Kast falls, Hale moves up, and someone gets the chamber."
+        },
+        {
+          "who": "b",
+          "id": "cv_holt_pell_02_2",
+          "emotion": "Anger",
+          "text": "People died, Brennic."
+        },
+        {
+          "who": "a",
+          "id": "cv_holt_pell_02_3",
+          "emotion": "Sad",
+          "text": "I know. I'm sorry. I just don't know what else to think about."
+        }
+      ]
+    },
+    {
+      "id": "cv_moran_rusk_01",
+      "a": "SFMoran",
+      "b": "SFRusk",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_moran_rusk_01_1",
+          "emotion": "Neutral",
+          "text": "Doc, one of my officers got scratched by a crab."
+        },
+        {
+          "who": "b",
+          "id": "cv_moran_rusk_01_2",
+          "emotion": "Fear",
+          "text": "Scratched or bitten? It matters enormously."
+        },
+        {
+          "who": "a",
+          "id": "cv_moran_rusk_01_3",
+          "emotion": "Neutral",
+          "text": "Scratched."
+        },
+        {
+          "who": "b",
+          "id": "cv_moran_rusk_01_4",
+          "emotion": "Neutral",
+          "text": "Then send them in. And keep them away from anything with legs."
+        }
+      ]
+    },
+    {
+      "id": "cv_mire_guardB_01",
+      "a": "SFMire",
+      "b": "GuardB",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_mire_guardB_01_1",
+          "emotion": "Sad",
+          "text": "Do you miss home, officer?"
+        },
+        {
+          "who": "b",
+          "id": "cv_mire_guardB_01_2",
+          "emotion": "Sad",
+          "text": "Every hour. You?"
+        },
+        {
+          "who": "a",
+          "id": "cv_mire_guardB_01_3",
+          "emotion": "Sad",
+          "text": "I miss rain that doesn't turn into snow."
+        },
+        {
+          "who": "b",
+          "id": "cv_mire_guardB_01_4",
+          "emotion": "Neutral",
+          "text": "I miss being warm. I've forgotten what it feels like."
+        }
+      ]
+    },
+    {
+      "id": "cv_guardA_venn_01",
+      "a": "GuardA",
+      "b": "SFVenn",
+      "minStage": 0,
+      "maxStage": 1000,
+      "lines": [
+        {
+          "who": "a",
+          "id": "cv_guardA_venn_01_1",
+          "emotion": "Anger",
+          "text": "Venn, the main gate is stuck again."
+        },
+        {
+          "who": "b",
+          "id": "cv_guardA_venn_01_2",
+          "emotion": "Puzzled",
+          "text": "Did you kick it?"
+        },
+        {
+          "who": "a",
+          "id": "cv_guardA_venn_01_3",
+          "emotion": "Neutral",
+          "text": "Yes."
+        },
+        {
+          "who": "b",
+          "id": "cv_guardA_venn_01_4",
+          "emotion": "Neutral",
+          "text": "Kick it lower. That's the whole repair."
+        }
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "tp_kast_place",
+      "speaker": "SFKast",
+      "prompt": "What is this place?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_kast_place_r1",
+          "emotion": "Neutral",
+          "text": "Starfall Research Site. We study the crystal that fell here a year ago."
+        },
+        {
+          "id": "tp_kast_place_r2",
+          "emotion": "Neutral",
+          "text": "We are the Lambda Directorate. Scholars, mostly. Far from home, entirely."
+        }
+      ],
+      "actions": {},
+      "children": [
+        {
+          "id": "tp_kast_place_home",
+          "speaker": "SFKast",
+          "prompt": "Where is home, exactly?",
+          "cond": [],
+          "once": false,
+          "responses": [
+            {
+              "id": "tp_kast_place_home_r1",
+              "emotion": "Neutral",
+              "text": "Far enough that the answer would mean nothing to you."
+            },
+            {
+              "id": "tp_kast_place_home_r2",
+              "emotion": "Neutral",
+              "text": "Let's leave it at that."
+            }
+          ],
+          "actions": {},
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "tp_kast_crater",
+      "speaker": "SFKast",
+      "prompt": "Tell me about the crater.",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_kast_crater_r1",
+          "emotion": "Neutral",
+          "text": "The star struck hard enough to melt the bedrock into glass."
+        },
+        {
+          "id": "tp_kast_crater_r2",
+          "emotion": "Happy",
+          "text": "Its heart was a crystal that stores energy from nothing. Zero-point energy."
+        }
+      ],
+      "actions": {},
+      "children": [
+        {
+          "id": "tp_kast_crater_magic",
+          "speaker": "SFKast",
+          "prompt": "Energy from nothing? Sounds like magic.",
+          "cond": [],
+          "once": false,
+          "responses": [
+            {
+              "id": "tp_kast_crater_magic_r1",
+              "emotion": "Neutral",
+              "text": "Your mages would say so. We prefer equations. They're less temperamental."
+            }
+          ],
+          "actions": {},
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "tp_kast_staff",
+      "speaker": "SFKast",
+      "prompt": "What do you think of your staff?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_kast_staff_r1",
+          "emotion": "Neutral",
+          "text": "Hale is brilliant and reckless. Rusk is careful and frightened."
+        },
+        {
+          "id": "tp_kast_staff_r2",
+          "emotion": "Neutral",
+          "text": "Venn keeps the lights on. The juniors keep me humble, mostly by breaking things."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_kast_creatures",
+      "speaker": "SFKast",
+      "prompt": "What are those creatures outside?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_kast_creatures_r1",
+          "emotion": "Neutral",
+          "text": "Fauna from the Hollow, a neighboring space our experiments brushed against."
+        },
+        {
+          "id": "tp_kast_creatures_r2",
+          "emotion": "Neutral",
+          "text": "The parasites are called headcrabs. Unpleasant, but manageable. Mostly."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_kast_skyrim",
+      "speaker": "SFKast",
+      "prompt": "What do you make of Skyrim?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_kast_skyrim_r1",
+          "emotion": "Puzzled",
+          "text": "A province of shouting men, flying lizards, and alarmingly good mead."
+        },
+        {
+          "id": "tp_kast_skyrim_r2",
+          "emotion": "Happy",
+          "text": "I admire the Nords. They solve problems with confidence, if not accuracy."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_kast_incident",
+      "speaker": "SFKast",
+      "prompt": "What was Incident Seven?",
+      "cond": [
+        "stage<40"
+      ],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_kast_incident_r1",
+          "emotion": "Neutral",
+          "text": "A containment fault in Wing B. Regrettable. Resolved."
+        },
+        {
+          "id": "tp_kast_incident_r2",
+          "emotion": "Neutral",
+          "text": "Let's not dwell on it. Rumor makes a poor scientist."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_hale_work",
+      "speaker": "SFHale",
+      "prompt": "What do you do here?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_hale_work_r1",
+          "emotion": "Happy",
+          "text": "I run the Test Chamber. Crystals go in, wonders come out."
+        },
+        {
+          "id": "tp_hale_work_r2",
+          "emotion": "Neutral",
+          "text": "Sometimes sparks come out. Sometimes the wonders come out sideways."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_hale_gun",
+      "speaker": "SFHale",
+      "prompt": "Tell me about the manipulator.",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_hale_gun_r1",
+          "emotion": "Happy",
+          "text": "The Zero-Point Field Manipulator. My masterpiece. Pulls, pushes, and hurls like a dancer."
+        },
+        {
+          "id": "tp_hale_gun_r2",
+          "emotion": "Happy",
+          "text": "Well. A dancer with a very strong grip."
+        }
+      ],
+      "actions": {},
+      "children": [
+        {
+          "id": "tp_hale_gun_crystals",
+          "speaker": "SFHale",
+          "prompt": "Why does it need crystals?",
+          "cond": [],
+          "once": false,
+          "responses": [
+            {
+              "id": "tp_hale_gun_crystals_r1",
+              "emotion": "Neutral",
+              "text": "The crystal is the heart. Every pull borrows energy from the field."
+            },
+            {
+              "id": "tp_hale_gun_crystals_r2",
+              "emotion": "Happy",
+              "text": "Feed it crystals, and it'll love you back."
+            }
+          ],
+          "actions": {},
+          "children": []
+        },
+        {
+          "id": "tp_hale_gun_stolen",
+          "speaker": "SFHale",
+          "prompt": "How did one go missing?",
+          "cond": [],
+          "once": false,
+          "responses": [
+            {
+              "id": "tp_hale_gun_stolen_r1",
+              "emotion": "Sad",
+              "text": "A junior panicked after Incident Seven and ran off with a prototype."
+            },
+            {
+              "id": "tp_hale_gun_stolen_r2",
+              "emotion": "Happy",
+              "text": "Smart kid, honestly. Picked the best one."
+            }
+          ],
+          "actions": {},
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "tp_hale_kast",
+      "speaker": "SFHale",
+      "prompt": "What do you think of Director Kast?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_hale_kast_r1",
+          "emotion": "Neutral",
+          "text": "Aurelius is the smartest man I know. Also the most cautious, which is a waste."
+        },
+        {
+          "id": "tp_hale_kast_r2",
+          "emotion": "Anger",
+          "text": "He wants the array at half power. Half! Like eating half a sweetroll."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_hale_hollow",
+      "speaker": "SFHale",
+      "prompt": "What is the Hollow?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_hale_hollow_r1",
+          "emotion": "Neutral",
+          "text": "A border world. Ours rubs up against it when the crystals resonate."
+        },
+        {
+          "id": "tp_hale_hollow_r2",
+          "emotion": "Happy",
+          "text": "Gray light, no wind, and things that think we're dinner. Fascinating place."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_hale_skyrim",
+      "speaker": "SFHale",
+      "prompt": "How do you like Skyrim?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_hale_skyrim_r1",
+          "emotion": "Happy",
+          "text": "Love it. Dragons! Actual dragons! Do you know the lift on those wings?"
+        },
+        {
+          "id": "tp_hale_skyrim_r2",
+          "emotion": "Sad",
+          "text": "I've been trying to get a dragon scale under the lens for months."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_rusk_work",
+      "speaker": "SFRusk",
+      "prompt": "What do you research?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_rusk_work_r1",
+          "emotion": "Neutral",
+          "text": "Xenobiology. The parasites from the Hollow, mostly. How they feed, how they bond."
+        },
+        {
+          "id": "tp_rusk_work_r2",
+          "emotion": "Sad",
+          "text": "I used to find it fascinating. Now I mostly find it in my nightmares."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_rusk_headcrabs",
+      "speaker": "SFRusk",
+      "prompt": "How do headcrabs work?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_rusk_headcrabs_r1",
+          "emotion": "Disgust",
+          "text": "They latch onto the head and fuse with the nervous system."
+        },
+        {
+          "id": "tp_rusk_headcrabs_r2",
+          "emotion": "Fear",
+          "text": "The host keeps walking. Keeps groaning. Whether anyone's still inside, I can't say."
+        }
+      ],
+      "actions": {},
+      "children": [
+        {
+          "id": "tp_rusk_headcrabs_cure",
+          "speaker": "SFRusk",
+          "prompt": "Can a host be saved?",
+          "cond": [],
+          "once": false,
+          "responses": [
+            {
+              "id": "tp_rusk_headcrabs_cure_r1",
+              "emotion": "Sad",
+              "text": "I've tried. Every time. I'm sorry, the answer is no."
+            }
+          ],
+          "actions": {},
+          "children": []
+        },
+        {
+          "id": "tp_rusk_headcrabs_fight",
+          "speaker": "SFRusk",
+          "prompt": "How do I fight them?",
+          "cond": [],
+          "once": false,
+          "responses": [
+            {
+              "id": "tp_rusk_headcrabs_fight_r1",
+              "emotion": "Neutral",
+              "text": "Aim for the parasite, not the host. And keep your head covered."
+            }
+          ],
+          "actions": {},
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "tp_rusk_kast",
+      "speaker": "SFRusk",
+      "prompt": "What do you think of Kast?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_rusk_kast_r1",
+          "emotion": "Neutral",
+          "text": "The Director is brilliant. And he keeps secrets the way others keep pets."
+        },
+        {
+          "id": "tp_rusk_kast_r2",
+          "emotion": "Sad",
+          "text": "Carefully. Lovingly. Behind locked doors."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_rusk_fear",
+      "speaker": "SFRusk",
+      "prompt": "You seem frightened.",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_rusk_fear_r1",
+          "emotion": "Fear",
+          "text": "I study things that climb into people's skulls. Of course I'm frightened."
+        },
+        {
+          "id": "tp_rusk_fear_r2",
+          "emotion": "Sad",
+          "text": "The only sane people here are the frightened ones."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_rusk_wingb",
+      "speaker": "SFRusk",
+      "prompt": "What happened in Wing B?",
+      "cond": [
+        "stage<30"
+      ],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_rusk_wingb_r1",
+          "emotion": "Fear",
+          "text": "I can't talk about that. Not here. Not yet."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_venn_work",
+      "speaker": "SFVenn",
+      "prompt": "What do you do here?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_venn_work_r1",
+          "emotion": "Neutral",
+          "text": "I keep the resonance array from shaking itself apart. And the generators. And the lights."
+        },
+        {
+          "id": "tp_venn_work_r2",
+          "emotion": "Anger",
+          "text": "If it works, that's me. If it doesn't, that's also me, apparently."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_venn_tools",
+      "speaker": "SFVenn",
+      "prompt": "You seem frustrated.",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_venn_tools_r1",
+          "emotion": "Anger",
+          "text": "This province has a thousand ways to sharpen a sword and zero ways to make a bolt."
+        },
+        {
+          "id": "tp_venn_tools_r2",
+          "emotion": "Puzzled",
+          "text": "I traded a smith a lantern for copper wire. He thinks it's sorcery."
+        }
+      ],
+      "actions": {},
+      "children": [
+        {
+          "id": "tp_venn_tools_help",
+          "speaker": "SFVenn",
+          "prompt": "Can I get you anything?",
+          "cond": [],
+          "once": false,
+          "responses": [
+            {
+              "id": "tp_venn_tools_help_r1",
+              "emotion": "Neutral",
+              "text": "Iron ingots, if you see any. Real tools, if you find a miracle."
+            }
+          ],
+          "actions": {},
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "tp_venn_array",
+      "speaker": "SFVenn",
+      "prompt": "How does the resonance array work?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_venn_array_r1",
+          "emotion": "Neutral",
+          "text": "Crystals vibrate. We amplify the vibration. Reality gets nervous."
+        },
+        {
+          "id": "tp_venn_array_r2",
+          "emotion": "Disgust",
+          "text": "Push it too far and reality gets more than nervous. That's Hale's favorite part."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_venn_hale",
+      "speaker": "SFVenn",
+      "prompt": "What do you think of Hale?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_venn_hale_r1",
+          "emotion": "Anger",
+          "text": "Hale plays my generators like a drum. I treat his requests like weather."
+        },
+        {
+          "id": "tp_venn_hale_r2",
+          "emotion": "Neutral",
+          "text": "Something to complain about, and nothing I can stop."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_venn_magic",
+      "speaker": "SFVenn",
+      "prompt": "Have you seen any magic here?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_venn_magic_r1",
+          "emotion": "Puzzled",
+          "text": "A fellow in Whiterun froze a puddle by glaring at it. I've stopped asking questions."
+        },
+        {
+          "id": "tp_venn_magic_r2",
+          "emotion": "Anger",
+          "text": "And some old court wizard in Windhelm bought our notes. Wuunferth. Built a crystal trap from them."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_moran_job",
+      "speaker": "SFMoran",
+      "prompt": "What does security do here?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_moran_job_r1",
+          "emotion": "Neutral",
+          "text": "Keep the fence up, the creatures out, and the scientists alive. In that order."
+        },
+        {
+          "id": "tp_moran_job_r2",
+          "emotion": "Disgust",
+          "text": "Some days I'd swap the last two."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_moran_officers",
+      "speaker": "SFMoran",
+      "prompt": "Tell me about your officers.",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_moran_officers_r1",
+          "emotion": "Neutral",
+          "text": "Good people. Tired people. Nine of them, on a site that needs thirty."
+        },
+        {
+          "id": "tp_moran_officers_r2",
+          "emotion": "Sad",
+          "text": "They didn't sign up for crabs. They signed up for a paycheck and a view."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_moran_creatures",
+      "speaker": "SFMoran",
+      "prompt": "How do you handle the creatures?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_moran_creatures_r1",
+          "emotion": "Neutral",
+          "text": "Zombies are slow. Crabs are fast. Kill the fast ones first."
+        },
+        {
+          "id": "tp_moran_creatures_r2",
+          "emotion": "Neutral",
+          "text": "And never let one onto your face. That's the whole training."
+        }
+      ],
+      "actions": {},
+      "children": [
+        {
+          "id": "tp_moran_creatures_canisters",
+          "speaker": "SFMoran",
+          "prompt": "Where do they come from?",
+          "cond": [],
+          "once": false,
+          "responses": [
+            {
+              "id": "tp_moran_creatures_canisters_r1",
+              "emotion": "Neutral",
+              "text": "Canisters. The rifts spit them out all over these mountains."
+            },
+            {
+              "id": "tp_moran_creatures_canisters_r2",
+              "emotion": "Sad",
+              "text": "My people haul them in when they can. Some trips, not everyone comes back."
+            }
+          ],
+          "actions": {},
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "tp_moran_scientists",
+      "speaker": "SFMoran",
+      "prompt": "What do you think of the scientists?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_moran_scientists_r1",
+          "emotion": "Disgust",
+          "text": "They're smart. Smart people make the biggest messes."
+        },
+        {
+          "id": "tp_moran_scientists_r2",
+          "emotion": "Neutral",
+          "text": "Rusk is all right. He worries. I trust the ones who worry."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_moran_armory",
+      "speaker": "SFMoran",
+      "prompt": "Can I get into the armory?",
+      "cond": [
+        "stage<50"
+      ],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_moran_armory_r1",
+          "emotion": "Neutral",
+          "text": "Not without clearance. And clearance comes from the Director."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_moran_armory_open",
+      "speaker": "SFMoran",
+      "prompt": "About the armory...",
+      "cond": [
+        "stage>=50"
+      ],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_moran_armory_open_r1",
+          "emotion": "Neutral",
+          "text": "You've got clearance. The chest is unlocked. Take what you need."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_pell_work",
+      "speaker": "SFPell",
+      "prompt": "What do you do here?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_pell_work_r1",
+          "emotion": "Sad",
+          "text": "Readings. Logs. More readings. And I fetch things for Dr. Hale."
+        },
+        {
+          "id": "tp_pell_work_r2",
+          "emotion": "Puzzled",
+          "text": "Sometimes I fetch Dr. Hale, when the fumes knock him over."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_pell_nervous",
+      "speaker": "SFPell",
+      "prompt": "You seem nervous.",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_pell_nervous_r1",
+          "emotion": "Fear",
+          "text": "Nervous? Me? I just jump at shadows. The shadows here have teeth."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_pell_runaway",
+      "speaker": "SFPell",
+      "prompt": "Did someone run off with a prototype?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_pell_runaway_r1",
+          "emotion": "Fear",
+          "text": "Oh. Yes. One of us, a junior like me. Ran toward Riverwood after Incident Seven."
+        },
+        {
+          "id": "tp_pell_runaway_r2",
+          "emotion": "Sad",
+          "text": "Honestly? Some nights I wish I'd gone too."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_holt_plans",
+      "speaker": "SFHolt",
+      "prompt": "What are your plans?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_holt_plans_r1",
+          "emotion": "Happy",
+          "text": "Senior researcher in a year. Test Chamber in two. Director in five."
+        },
+        {
+          "id": "tp_holt_plans_r2",
+          "emotion": "Happy",
+          "text": "Write that down. You'll want to say you knew me."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_holt_hale",
+      "speaker": "SFHolt",
+      "prompt": "What do you think of Hale?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_holt_hale_r1",
+          "emotion": "Neutral",
+          "text": "Talented. Loud. Overdue for retirement, if you ask me. Nobody asks me."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_holt_skyrim",
+      "speaker": "SFHolt",
+      "prompt": "How do you find Skyrim?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_holt_skyrim_r1",
+          "emotion": "Disgust",
+          "text": "Cold. Loud. Everyone thinks a beard counts as a personality."
+        },
+        {
+          "id": "tp_holt_skyrim_r2",
+          "emotion": "Happy",
+          "text": "Though I'll admit, the mead grows on you."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_mire_books",
+      "speaker": "SFMire",
+      "prompt": "What are you reading?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_mire_books_r1",
+          "emotion": "Happy",
+          "text": "A saga about a Nord who wrestled a bear to win a bride."
+        },
+        {
+          "id": "tp_mire_books_r2",
+          "emotion": "Puzzled",
+          "text": "I'm not sure who won. I'm not sure the bear knew either."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_mire_home",
+      "speaker": "SFMire",
+      "prompt": "Do you miss home?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_mire_home_r1",
+          "emotion": "Sad",
+          "text": "Every day. But Riverwood is kind. People share bread without asking why."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_mire_star",
+      "speaker": "SFMire",
+      "prompt": "What do the locals say about the crater?",
+      "cond": [],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_mire_star_r1",
+          "emotion": "Neutral",
+          "text": "They call it the falling star. Some think we're its priests."
+        },
+        {
+          "id": "tp_mire_star_r2",
+          "emotion": "Happy",
+          "text": "A farmer brought us cheese as an offering. We kept the cheese."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_kast_q10_gun",
+      "speaker": "SFKast",
+      "prompt": "The guards told me to speak with you.",
+      "cond": [
+        "stage==10",
+        "hasGravityGun"
+      ],
+      "once": true,
+      "responses": [
+        {
+          "id": "tp_kast_q10_gun_r1",
+          "emotion": "Surprise",
+          "text": "Well. You've brought back our missing prototype. Hale will be insufferable."
+        },
+        {
+          "id": "tp_kast_q10_gun_r2",
+          "emotion": "Neutral",
+          "text": "A junior took it in a panic. How it reached your hands, I won't ask. Yet."
+        },
+        {
+          "id": "tp_kast_q10_gun_r3",
+          "emotion": "Neutral",
+          "text": "Make yourself useful. Report to Dr. Hale in the Test Chamber."
+        }
+      ],
+      "actions": {
+        "setStage": 20,
+        "objectiveCompleted": [
+          10
+        ],
+        "objectiveDisplayed": [
+          20
+        ]
+      },
+      "children": []
+    },
+    {
+      "id": "tp_kast_q10_nogun",
+      "speaker": "SFKast",
+      "prompt": "The guards told me to speak with you.",
+      "cond": [
+        "stage==10",
+        "noGravityGun"
+      ],
+      "once": true,
+      "responses": [
+        {
+          "id": "tp_kast_q10_nogun_r1",
+          "emotion": "Neutral",
+          "text": "Director Aurelius Kast. Welcome to Starfall, such as it is."
+        },
+        {
+          "id": "tp_kast_q10_nogun_r2",
+          "emotion": "Sad",
+          "text": "We're shorthanded. A prototype was stolen, and half my staff jumps at shadows."
+        },
+        {
+          "id": "tp_kast_q10_nogun_r3",
+          "emotion": "Neutral",
+          "text": "If you want to help, report to Dr. Hale in the Test Chamber."
+        }
+      ],
+      "actions": {
+        "setStage": 20,
+        "objectiveCompleted": [
+          10
+        ],
+        "objectiveDisplayed": [
+          20
+        ]
+      },
+      "children": []
+    },
+    {
+      "id": "tp_hale_q20_ask",
+      "speaker": "SFHale",
+      "prompt": "Director Kast sent me to help you.",
+      "cond": [
+        "stage==20"
+      ],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_hale_q20_ask_r1",
+          "emotion": "Happy",
+          "text": "Fresh hands! Wonderful. I need energy crystals. Three of them."
+        },
+        {
+          "id": "tp_hale_q20_ask_r2",
+          "emotion": "Neutral",
+          "text": "Embershard Mine near Riverwood is full of them. Bring three back to me."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_hale_q20_handin",
+      "speaker": "SFHale",
+      "prompt": "I have the three crystals.",
+      "cond": [
+        "stage==20",
+        "crystals>=3"
+      ],
+      "once": true,
+      "responses": [
+        {
+          "id": "tp_hale_q20_handin_r1",
+          "emotion": "Happy",
+          "text": "Look at them glow! These are perfect."
+        },
+        {
+          "id": "tp_hale_q20_handin_r2",
+          "emotion": "Neutral",
+          "text": "Rusk was asking after you. See him before he chews through his gloves."
+        }
+      ],
+      "actions": {
+        "removeCrystals": 3,
+        "setStage": 30,
+        "objectiveCompleted": [
+          20
+        ],
+        "objectiveDisplayed": [
+          30
+        ]
+      },
+      "children": []
+    },
+    {
+      "id": "tp_hale_q30_more",
+      "speaker": "SFHale",
+      "prompt": "Will you need more crystals?",
+      "cond": [
+        "stage>=30",
+        "stage<50"
+      ],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_hale_q30_more_r1",
+          "emotion": "Neutral",
+          "text": "Always. But trading with outsiders needs Directorate Clearance."
+        },
+        {
+          "id": "tp_hale_q30_more_r2",
+          "emotion": "Happy",
+          "text": "Get the Director to sign off, and my stock is yours."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_hale_trade",
+      "speaker": "SFHale",
+      "prompt": "Let's trade.",
+      "cond": [
+        "stage>=50"
+      ],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_hale_trade_r1",
+          "emotion": "Happy",
+          "text": "Step right up. Crystals, fresh from the crater."
+        }
+      ],
+      "actions": {
+        "openVendor": true
+      },
+      "children": []
+    },
+    {
+      "id": "tp_rusk_q30_ask",
+      "speaker": "SFRusk",
+      "prompt": "Dr. Hale said you wanted to see me.",
+      "cond": [
+        "stage==30"
+      ],
+      "once": true,
+      "responses": [
+        {
+          "id": "tp_rusk_q30_ask_r1",
+          "emotion": "Fear",
+          "text": "Yes. Quietly, please. My research journal is in Containment Wing B."
+        },
+        {
+          "id": "tp_rusk_q30_ask_r2",
+          "emotion": "Sad",
+          "text": "It was sealed during Incident Seven. I need it back. Take my keycard."
+        },
+        {
+          "id": "tp_rusk_q30_ask_r3",
+          "emotion": "Fear",
+          "text": "Be careful in there. Things may still be moving."
+        }
+      ],
+      "actions": {
+        "giveKeycard": true
+      },
+      "children": []
+    },
+    {
+      "id": "tp_rusk_q30_remind",
+      "speaker": "SFRusk",
+      "prompt": "Tell me again about Wing B.",
+      "cond": [
+        "stage==30",
+        "hasKeycard"
+      ],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_rusk_q30_remind_r1",
+          "emotion": "Neutral",
+          "text": "Down the east stairs, past the decontamination showers. The journal is in my old office."
+        },
+        {
+          "id": "tp_rusk_q30_remind_r2",
+          "emotion": "Fear",
+          "text": "And don't let the Director see you go."
+        }
+      ],
+      "actions": {},
+      "children": []
+    },
+    {
+      "id": "tp_rusk_q40_handin",
+      "speaker": "SFRusk",
+      "prompt": "I found your journal.",
+      "cond": [
+        "stage==30",
+        "hasJournal"
+      ],
+      "once": true,
+      "responses": [
+        {
+          "id": "tp_rusk_q40_handin_r1",
+          "emotion": "Sad",
+          "text": "You found it. Thank you. Now you should know what's in it."
+        },
+        {
+          "id": "tp_rusk_q40_handin_r2",
+          "emotion": "Anger",
+          "text": "Kast ordered Wing B sealed during Incident Seven. Our people were still inside."
+        },
+        {
+          "id": "tp_rusk_q40_handin_r3",
+          "emotion": "Sad",
+          "text": "Then he buried the report. I signed the false roster. Now you know."
+        }
+      ],
+      "actions": {
+        "removeJournal": true,
+        "setStage": 40,
+        "objectiveCompleted": [
+          30
+        ],
+        "objectiveDisplayed": [
+          40
+        ]
+      },
+      "children": [
+        {
+          "id": "tp_rusk_q40_who",
+          "speaker": "SFRusk",
+          "prompt": "Who was inside?",
+          "cond": [],
+          "once": false,
+          "responses": [
+            {
+              "id": "tp_rusk_q40_who_r1",
+              "emotion": "Sad",
+              "text": "Four researchers and two officers. They knocked on that door for hours."
+            }
+          ],
+          "actions": {},
+          "children": []
+        },
+        {
+          "id": "tp_rusk_q40_why",
+          "speaker": "SFRusk",
+          "prompt": "Why tell me?",
+          "cond": [],
+          "once": false,
+          "responses": [
+            {
+              "id": "tp_rusk_q40_why_r1",
+              "emotion": "Neutral",
+              "text": "Because you're not one of us. Kast can't silence you with a transfer."
+            },
+            {
+              "id": "tp_rusk_q40_why_r2",
+              "emotion": "Anger",
+              "text": "Go to him. Make him say it out loud."
+            }
+          ],
+          "actions": {},
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "tp_kast_q40_confront",
+      "speaker": "SFKast",
+      "prompt": "Rusk told me about Wing B.",
+      "cond": [
+        "stage==40"
+      ],
+      "once": false,
+      "responses": [
+        {
+          "id": "tp_kast_q40_confront_r1",
+          "emotion": "Neutral",
+          "text": "So he finally found his courage. Good for him."
+        },
+        {
+          "id": "tp_kast_q40_confront_r2",
+          "emotion": "Sad",
+          "text": "Yes. I sealed Wing B. The hosts were at the door. Seconds mattered."
+        },
+        {
+          "id": "tp_kast_q40_confront_r3",
+          "emotion": "Neutral",
+          "text": "Six lives against the whole site, and perhaps Riverwood. I chose. Now you judge."
+        }
+      ],
+      "actions": {},
+      "children": [
+        {
+          "id": "tp_kast_q40_condemn",
+          "speaker": "SFKast",
+          "prompt": "You left them to die. That's murder.",
+          "cond": [],
+          "once": true,
+          "responses": [
+            {
+              "id": "tp_kast_q40_condemn_r1",
+              "emotion": "Sad",
+              "text": "Perhaps it is. I'll carry it either way."
+            },
+            {
+              "id": "tp_kast_q40_condemn_r2",
+              "emotion": "Neutral",
+              "text": "But you've earned the truth, and something more. You now hold Directorate Clearance."
+            },
+            {
+              "id": "tp_kast_q40_condemn_r3",
+              "emotion": "Neutral",
+              "text": "Hale will trade with you, and Moran will open the armory. Use them better than I did."
+            }
+          ],
+          "actions": {
+            "setStage": 50,
+            "objectiveCompleted": [
+              40
+            ]
+          },
+          "children": []
+        },
+        {
+          "id": "tp_kast_q40_accept",
+          "speaker": "SFKast",
+          "prompt": "You made a hard choice. I understand.",
+          "cond": [],
+          "once": true,
+          "responses": [
+            {
+              "id": "tp_kast_q40_accept_r1",
+              "emotion": "Surprise",
+              "text": "Understanding. I hadn't expected that from anyone."
+            },
+            {
+              "id": "tp_kast_q40_accept_r2",
+              "emotion": "Neutral",
+              "text": "Then take this as thanks. You now hold Directorate Clearance."
+            },
+            {
+              "id": "tp_kast_q40_accept_r3",
+              "emotion": "Neutral",
+              "text": "Hale's stock and Moran's armory are open to you. Keep this site honest. I couldn't."
+            }
+          ],
+          "actions": {
+            "setStage": 50,
+            "objectiveCompleted": [
+              40
+            ]
+          },
+          "children": []
+        }
+      ]
+    }
+  ]
+}

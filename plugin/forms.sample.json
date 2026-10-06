@@ -1,0 +1,80 @@
+{
+  "_comment": [
+    "Sample of Data/SKSE/Plugins/StarfallSite/forms.json. All ids here are PLACEHOLDERS; the real file is written by the ESP generator.",
+    "Schema = DESIGN.md. Every key is optional; unresolved entries are logged to StarfallSite.log and skipped. Keys starting with '_' are ignored.",
+    "Ids: hex string ('0x80A' or '80A') or a JSON number, always the plugin-local id (load order independent).",
+    "A form reference is {\"plugin\": \"X.esp\", \"id\": \"0x...\"}. Where only an id is given, the plugin defaults to StarfallSite.esp (spawner groups: spawner.plugin).",
+    "Additive extensions (optional): spawner.groups[].plugin, spawner.canister.id (alias of static), actors may be ACHR refs or NPC_ bases,",
+    "conversations[].plugin, lines[].plugin, lines[].text (only used to time the line: max(2.5s, chars/14)), lines[].seconds (explicit wait),",
+    "infoActions[].plugin (plugin of the INFO), infoActions[].addToFaction {plugin,id,rank}, infoActions[].unlock {plugin,id} or list,",
+    "infoActions[].enable list (or one object), infoActions[].once (run at most once per playthrough)."
+  ],
+
+  "spawner": {
+    "plugin": "StarfallCreatures.esp",
+    "groups": [
+      {"name": "headcrabs_small", "lvln": "0x80A", "min": 1, "max": 3, "weight": 4, "minLevel": 1,  "interior": true,  "exterior": true},
+      {"name": "zombies",         "lvln": "0x80B", "min": 1, "max": 2, "weight": 3, "minLevel": 4,  "interior": true,  "exterior": false},
+      {"name": "fast_headcrabs",  "lvln": "0x80C", "min": 2, "max": 4, "weight": 2, "minLevel": 10, "interior": true,  "exterior": true},
+      {"name": "zombie_pack",     "lvln": "0x80D", "min": 2, "max": 3, "weight": 1, "minLevel": 15, "interior": false, "exterior": true}
+    ],
+    "canister": {"plugin": "StarfallSite.esp", "static": "0x900"}
+  },
+
+  "headcrabKeyword": {"plugin": "StarfallCreatures.esp", "id": "0x801"},
+  "zombieKeyword":   {"plugin": "StarfallCreatures.esp", "id": "0x802"},
+
+  "siteWorldspace": {"plugin": "StarfallSite.esp", "id": "0x800"},
+  "siteCells": [
+    {"plugin": "StarfallSite.esp", "id": "0x801"},
+    {"plugin": "StarfallSite.esp", "id": "0x802"}
+  ],
+
+  "actors": {
+    "SFKast":  {"plugin": "StarfallSite.esp", "id": "0xA01"},
+    "SFHale":  {"plugin": "StarfallSite.esp", "id": "0xA02"},
+    "SFRusk":  {"plugin": "StarfallSite.esp", "id": "0xA03"},
+    "SFVenn":  {"plugin": "StarfallSite.esp", "id": "0xA04"},
+    "SFPell":  {"plugin": "StarfallSite.esp", "id": "0xA05"},
+    "SFHolt":  {"plugin": "StarfallSite.esp", "id": "0xA06"},
+    "SFMire":  {"plugin": "StarfallSite.esp", "id": "0xA07"},
+    "SFMoran": {"plugin": "StarfallSite.esp", "id": "0xA08"}
+  },
+
+  "conversations": [
+    {"a": "SFKast", "b": "SFHale",
+     "lines": [
+       {"who": "a", "topic": "0xB01", "text": "Marcus, the resonance readings from last night. Explain them to me slowly."},
+       {"who": "b", "topic": "0xB02", "text": "Slowly? They went up. A lot. Isn't that wonderful?"}
+     ],
+     "minStage": 0, "maxStage": 1000, "weight": 1},
+    {"a": "SFRusk", "b": "SFMoran",
+     "lines": [
+       {"who": "a", "topic": "0xB03"},
+       {"who": "b", "topic": "0xB04"},
+       {"who": "a", "topic": "0xB05", "seconds": 6.0}
+     ],
+     "minStage": 30, "maxStage": 50, "weight": 2}
+  ],
+
+  "infoActions": [
+    {"info": "0xC01", "setStage": 20, "objectiveCompleted": [10], "objectiveDisplayed": [20], "once": true},
+    {"info": "0xC02", "setStage": 30,
+     "removeItem": {"plugin": "GravityGun.esp", "id": "0x806", "count": 3},
+     "objectiveCompleted": [20], "objectiveDisplayed": [30], "once": true},
+    {"info": "0xC03",
+     "addItem": {"plugin": "StarfallSite.esp", "id": "0xD01", "count": 1},
+     "unlock": {"plugin": "StarfallSite.esp", "id": "0xE01"},
+     "once": true},
+    {"info": "0xC04", "setStage": 40,
+     "removeItem": {"plugin": "StarfallSite.esp", "id": "0xD02", "count": 1},
+     "objectiveCompleted": [30], "objectiveDisplayed": [40], "once": true},
+    {"info": "0xC05", "setStage": 100,
+     "addToFaction": {"plugin": "StarfallSite.esp", "id": "0xF01", "rank": 0},
+     "unlock": [{"plugin": "StarfallSite.esp", "id": "0xE02"}],
+     "enable": [{"plugin": "StarfallSite.esp", "id": "0xE03"}],
+     "objectiveCompleted": [50], "once": true}
+  ],
+
+  "quest": {"plugin": "StarfallSite.esp", "id": "0x810"}
+}
