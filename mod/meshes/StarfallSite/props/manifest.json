@@ -1,0 +1,1300 @@
+{
+ "antenna_mast": {
+  "nif": "StarfallSite\\props\\antenna_mast.nif",
+  "bounds": [
+   -70,
+   -70,
+   -6,
+   70,
+   70,
+   1212
+  ],
+  "footprint": [
+   -70,
+   -70,
+   70,
+   70
+  ],
+  "kind": "static",
+  "notes": "triangular lattice radio mast 1200 tall on a concrete pad; red/white painted bands (vertex colours), red beacon (glow) at the top",
+  "tris": 2220,
+  "collision_pieces": 2,
+  "havok_default": "metal"
+ },
+ "barrel_hazard": {
+  "nif": "StarfallSite\\props\\barrel_hazard.nif",
+  "bounds": [
+   -30,
+   -30,
+   0,
+   30,
+   30,
+   91
+  ],
+  "footprint": [
+   -30,
+   -30,
+   30,
+   30
+  ],
+  "kind": "static",
+  "notes": "yellow hazard drum 60 dia x 90",
+  "tris": 504,
+  "collision_pieces": 1,
+  "havok_default": "barrel"
+ },
+ "barrel_toxic": {
+  "nif": "StarfallSite\\props\\barrel_toxic.nif",
+  "bounds": [
+   -38,
+   -30,
+   0,
+   49,
+   71,
+   91
+  ],
+  "footprint": [
+   -30,
+   -30,
+   30,
+   30
+  ],
+  "kind": "static",
+  "notes": "green toxic drum 60 dia x 90, leaking glowing liquid (glow map) + puddle",
+  "tris": 532,
+  "collision_pieces": 1,
+  "havok_default": "barrel"
+ },
+ "blast_door_frame": {
+  "nif": "StarfallSite\\props\\blast_door_frame.nif",
+  "bounds": [
+   -150,
+   -30,
+   0,
+   150,
+   37,
+   300
+  ],
+  "footprint": [
+   -150,
+   -30,
+   150,
+   30
+  ],
+  "kind": "static",
+  "notes": "blast door 300 wide x 60 deep x 300 tall (opening 200x240) with the heavy slab CLOSED; collision blocks the doorway; red warning lamps (add LIGH if wanted)",
+  "tris": 262,
+  "collision_pieces": 4,
+  "havok_default": "metal_heavy",
+  "opening": {
+   "width": 200,
+   "height": 240
+  }
+ },
+ "blast_door_open": {
+  "nif": "StarfallSite\\props\\blast_door_open.nif",
+  "bounds": [
+   -150,
+   -30,
+   0,
+   150,
+   37,
+   300
+  ],
+  "footprint": 0,
+  "kind": "static",
+  "notes": "same frame with the slab retracted into the lintel (only its hazard-striped lip shows); doorway 200x240 walkable",
+  "tris": 262,
+  "collision_pieces": 3,
+  "havok_default": "metal_heavy",
+  "cutouts": [
+   [
+    -150,
+    -30,
+    -100.0,
+    30
+   ],
+   [
+    100.0,
+    -30,
+    150,
+    30
+   ]
+  ],
+  "opening": {
+   "width": 200,
+   "height": 240
+  }
+ },
+ "blood_splat_floor": {
+  "nif": "StarfallSite\\props\\blood_splat_floor.nif",
+  "bounds": [
+   -60,
+   -60,
+   0,
+   60,
+   60,
+   1
+  ],
+  "footprint": 0,
+  "kind": "decal",
+  "notes": "blood splatter decal quad 120x120, 0.4 above the floor, alpha blended + decal flag, no collision",
+  "tris": 2,
+  "collision_pieces": 0,
+  "havok_default": "organic"
+ },
+ "blood_splat_wall": {
+  "nif": "StarfallSite\\props\\blood_splat_wall.nif",
+  "bounds": [
+   -50,
+   0,
+   -50,
+   50,
+   1,
+   50
+  ],
+  "footprint": 0,
+  "kind": "decal",
+  "notes": "blood splatter wall decal 100x100; origin on the wall surface at the splat centre, 0.4 off the wall, no collision",
+  "tris": 2,
+  "collision_pieces": 0,
+  "havok_default": "organic",
+  "mount": "wall"
+ },
+ "broken_terminal": {
+  "nif": "StarfallSite\\props\\broken_terminal.nif",
+  "bounds": [
+   -20,
+   -25,
+   0,
+   26,
+   32,
+   37
+  ],
+  "footprint": [
+   -20,
+   -25,
+   26,
+   32
+  ],
+  "kind": "static",
+  "notes": "smashed CRT terminal (for tables/desks): cracked screen opening, glass shards, sparking (additive spark cards)",
+  "tris": 166,
+  "collision_pieces": 1,
+  "havok_default": "metal"
+ },
+ "bunker_entrance": {
+  "nif": "StarfallSite\\props\\bunker_entrance.nif",
+  "bounds": [
+   -350,
+   -250,
+   -100,
+   370,
+   330,
+   321
+  ],
+  "footprint": [
+   -350,
+   -250,
+   370,
+   330
+  ],
+  "kind": "static",
+  "notes": "exterior concrete bunker block 700x500x400 (z=-100..300, 100 sunk below grade) with a framed 256x256 doorway recess on +Y (recess back wall at y=186: place the facility load door there). Collision on all solid parts",
+  "tris": 558,
+  "collision_pieces": 8,
+  "havok_default": "stone",
+  "door_slot": {
+   "center": [
+    0,
+    186,
+    0
+   ],
+   "width": 256,
+   "height": 256,
+   "facing": "+Y"
+  },
+  "grade_z": 0
+ },
+ "catwalk_256": {
+  "nif": "StarfallSite\\props\\catwalk_256.nif",
+  "bounds": [
+   -131,
+   -65,
+   -14,
+   131,
+   65,
+   103
+  ],
+  "footprint": 0,
+  "kind": "static",
+  "notes": "metal grating catwalk 256 (X) x 128 (Y) with railings on both long sides; origin at the CENTRE OF THE WALKING SURFACE (z=0), frame hangs to z=-14. Tiles every 256 along X. Walkable box collision + railing walls",
+  "tris": 430,
+  "collision_pieces": 3,
+  "havok_default": "metal",
+  "surface_z": 0
+ },
+ "catwalk_stairs": {
+  "nif": "StarfallSite\\props\\catwalk_stairs.nif",
+  "bounds": [
+   -69,
+   -194,
+   0,
+   69,
+   194,
+   362
+  ],
+  "footprint": [
+   -64,
+   -192,
+   64,
+   192
+  ],
+  "kind": "static",
+  "notes": "grating stairs 128 wide rising 256 over 384 toward +Y: bottom edge at y=-192 (z=0), top at y=+192 (z=256, meets catwalk_256 surface). 16 steps (rise 16, run 24). Collision: walkable ramp hull + handrail walls",
+  "tris": 900,
+  "collision_pieces": 3,
+  "havok_default": "metal"
+ },
+ "chainlink_fence": {
+  "nif": "StarfallSite\\props\\chainlink_fence.nif",
+  "bounds": [
+   -128,
+   -26,
+   0,
+   128,
+   2,
+   276
+  ],
+  "footprint": [
+   -128,
+   -26,
+   128,
+   2
+  ],
+  "kind": "static",
+  "notes": "chain-link fence panel 256 wide x 250 tall (+ barbed wire to 275) along X (-128..128), alpha-tested double-sided mesh; posts are separate (fence_post at x=+-128)",
+  "tris": 808,
+  "collision_pieces": 1,
+  "havok_default": "metal"
+ },
+ "checkpoint_booth": {
+  "nif": "StarfallSite\\props\\checkpoint_booth.nif",
+  "bounds": [
+   -141,
+   -140,
+   0,
+   141,
+   141,
+   280
+  ],
+  "footprint": [
+   -141,
+   -140,
+   141,
+   141
+  ],
+  "kind": "static",
+  "notes": "enterable guard booth 250x250x280: door opening (90x210) in the +X wall, window over a counter on the +Y wall, side window on -X wall; collision on walls/glass/roof/floor/counter. Navmesh inside: use `cutouts` (wall rects), not the whole footprint",
+  "tris": 538,
+  "collision_pieces": 17,
+  "havok_default": "metal",
+  "cutouts": [
+   [
+    -125,
+    -125,
+    125,
+    -117
+   ],
+   [
+    -125,
+    -117,
+    -117,
+    117
+   ],
+   [
+    117,
+    -117,
+    125,
+    -45
+   ],
+   [
+    117,
+    45,
+    125,
+    117
+   ],
+   [
+    -125,
+    117,
+    125,
+    125
+   ],
+   [
+    -108,
+    78,
+    108,
+    117
+   ]
+  ],
+  "door_opening": {
+   "center": [
+    121,
+    0,
+    10
+   ],
+   "width": 90,
+   "height": 210,
+   "facing": "+X"
+  },
+  "light_offset": [
+   0,
+   0,
+   240
+  ]
+ },
+ "console_bank": {
+  "nif": "StarfallSite\\props\\console_bank.nif",
+  "bounds": [
+   -101,
+   -31,
+   0,
+   101,
+   33,
+   112
+  ],
+  "footprint": [
+   -101,
+   -31,
+   101,
+   33
+  ],
+  "kind": "static",
+  "notes": "floor-standing wall console 200x60x110, back against wall at y=-30; sloped control panel + 2 glow screens. Origin at base centre.",
+  "tris": 412,
+  "collision_pieces": 1,
+  "havok_default": "metal",
+  "back_y": -30
+ },
+ "containment_tank": {
+  "nif": "StarfallSite\\props\\containment_tank.nif",
+  "bounds": [
+   -46,
+   -46,
+   0,
+   60,
+   46,
+   259
+  ],
+  "footprint": [
+   -46,
+   -46,
+   60,
+   46
+  ],
+  "kind": "static",
+  "notes": "specimen containment tank, 90 dia x 230; glass tube (alpha blend, double sided), glowing liquid column",
+  "tris": 2266,
+  "collision_pieces": 1,
+  "havok_default": "metal"
+ },
+ "containment_tank_broken": {
+  "nif": "StarfallSite\\props\\containment_tank_broken.nif",
+  "bounds": [
+   -108,
+   -70,
+   0,
+   104,
+   98,
+   259
+  ],
+  "footprint": [
+   -45,
+   -45,
+   45,
+   45
+  ],
+  "kind": "static",
+  "notes": "broken containment tank: jagged glass remnants, empty, liquid puddle on base and floor",
+  "tris": 879,
+  "collision_pieces": 6,
+  "havok_default": "metal"
+ },
+ "crate_large": {
+  "nif": "StarfallSite\\props\\crate_large.nif",
+  "bounds": [
+   -48,
+   -48,
+   0,
+   48,
+   48,
+   96
+  ],
+  "footprint": [
+   -48,
+   -48,
+   48,
+   48
+  ],
+  "kind": "static",
+  "notes": "wooden supply crate 96x96x96",
+  "tris": 12,
+  "collision_pieces": 1,
+  "havok_default": "wood"
+ },
+ "crate_small": {
+  "nif": "StarfallSite\\props\\crate_small.nif",
+  "bounds": [
+   -32,
+   -32,
+   0,
+   32,
+   32,
+   64
+  ],
+  "footprint": [
+   -32,
+   -32,
+   32,
+   32
+  ],
+  "kind": "static",
+  "notes": "Half-Life style wooden supply crate 64x64x64",
+  "tris": 12,
+  "collision_pieces": 1,
+  "havok_default": "wood"
+ },
+ "crate_stack": {
+  "nif": "StarfallSite\\props\\crate_stack.nif",
+  "bounds": [
+   -100,
+   -50,
+   0,
+   102,
+   56,
+   160
+  ],
+  "footprint": [
+   -100,
+   -50,
+   102,
+   56
+  ],
+  "kind": "static",
+  "notes": "two large crates side by side + one small crate on top",
+  "tris": 36,
+  "collision_pieces": 3,
+  "havok_default": "wood"
+ },
+ "debris_pile": {
+  "nif": "StarfallSite\\props\\debris_pile.nif",
+  "bounds": [
+   -118,
+   -102,
+   -5,
+   120,
+   101,
+   47
+  ],
+  "footprint": [
+   -118,
+   -102,
+   120,
+   101
+  ],
+  "kind": "static",
+  "notes": "pile of broken concrete chunks, rebar and bent metal sheets ~190x160x60",
+  "tris": 1070,
+  "collision_pieces": 4,
+  "havok_default": "stone_broken"
+ },
+ "desk_terminal": {
+  "nif": "StarfallSite\\props\\desk_terminal.nif",
+  "bounds": [
+   -60,
+   -30,
+   0,
+   60,
+   32,
+   89
+  ],
+  "footprint": [
+   -60,
+   -30,
+   60,
+   32
+  ],
+  "kind": "static",
+  "notes": "office desk 120x60x52 with CRT terminal (glow screen) and keyboard; user side +Y",
+  "tris": 394,
+  "collision_pieces": 2,
+  "havok_default": "metal",
+  "surface_z": 52
+ },
+ "fence_post": {
+  "nif": "StarfallSite\\props\\fence_post.nif",
+  "bounds": [
+   -10,
+   -27,
+   -1,
+   10,
+   10,
+   277
+  ],
+  "footprint": [
+   -10,
+   -10,
+   10,
+   10
+  ],
+  "kind": "static",
+  "notes": "steel fence post r=4, 250 tall, with barbed-wire arm leaning to -Y (to 275) and concrete footing; place at chainlink_fence panel ends",
+  "tris": 250,
+  "collision_pieces": 1,
+  "havok_default": "metal"
+ },
+ "filing_cabinet": {
+  "nif": "StarfallSite\\props\\filing_cabinet.nif",
+  "bounds": [
+   -23,
+   -30,
+   0,
+   23,
+   34,
+   130
+  ],
+  "footprint": [
+   -23,
+   -30,
+   23,
+   34
+  ],
+  "kind": "container",
+  "notes": "4-drawer filing cabinet 45x60x130, drawers on +Y",
+  "tris": 288,
+  "collision_pieces": 1,
+  "havok_default": "metal"
+ },
+ "floodlight_tripod": {
+  "nif": "StarfallSite\\props\\floodlight_tripod.nif",
+  "bounds": [
+   -65,
+   -72,
+   0,
+   111,
+   74,
+   236
+  ],
+  "footprint": [
+   -61,
+   -35,
+   61,
+   70
+  ],
+  "kind": "light_fixture",
+  "notes": "portable floodlight on a tripod, 230 tall, lamp faces +Y tilted down 15 deg; glowing lens. Add a spot LIGH near (0,25,215)",
+  "tris": 624,
+  "collision_pieces": 5,
+  "havok_default": "metal",
+  "light_offset": [
+   0,
+   25,
+   215
+  ]
+ },
+ "fluorescent_ceiling": {
+  "nif": "StarfallSite\\props\\fluorescent_ceiling.nif",
+  "bounds": [
+   -60,
+   -15,
+   -9,
+   60,
+   15,
+   0
+  ],
+  "footprint": 0,
+  "kind": "light_fixture",
+  "notes": "ceiling light panel 120x30; CEILING-MOUNTED: origin on the ceiling surface, hangs down to z=-8; glowing diffuser faces -Z. Add a LIGH at about (0,0,-20)",
+  "tris": 46,
+  "collision_pieces": 1,
+  "havok_default": "metal",
+  "mount": "ceiling",
+  "light_offset": [
+   0,
+   0,
+   -20
+  ]
+ },
+ "generator": {
+  "nif": "StarfallSite\\props\\generator.nif",
+  "bounds": [
+   -110,
+   -57,
+   0,
+   111,
+   67,
+   195
+  ],
+  "footprint": [
+   -110,
+   -57,
+   111,
+   67
+  ],
+  "kind": "static",
+  "notes": "diesel-style generator 220x120x150 on a skid; control panel (glow) on +Y side",
+  "tris": 1252,
+  "collision_pieces": 2,
+  "havok_default": "metal"
+ },
+ "guard_tower": {
+  "nif": "StarfallSite\\props\\guard_tower.nif",
+  "bounds": [
+   -210,
+   -210,
+   -5,
+   210,
+   210,
+   850
+  ],
+  "footprint": 0,
+  "kind": "static",
+  "notes": "steel watch tower 400x400 base, wooden platform floor at z=610 (340x340) with half walls/railing, roof to 850, ladder on +Y side (no ladder collision). Ground under the tower is walkable: use `cutouts` (the 4 feet)",
+  "tris": 1526,
+  "collision_pieces": 15,
+  "havok_default": "metal",
+  "cutouts": [
+   [
+    -210,
+    -210,
+    -170,
+    -170
+   ],
+   [
+    -210,
+    170,
+    -170,
+    210
+   ],
+   [
+    170,
+    -210,
+    210,
+    -170
+   ],
+   [
+    170,
+    170,
+    210,
+    210
+   ]
+  ],
+  "platform_z": 610
+ },
+ "jersey_barrier": {
+  "nif": "StarfallSite\\props\\jersey_barrier.nif",
+  "bounds": [
+   -108,
+   -31,
+   0,
+   108,
+   31,
+   80
+  ],
+  "footprint": [
+   -108,
+   -31,
+   108,
+   31
+  ],
+  "kind": "static",
+  "notes": "concrete jersey barrier 200x60x80 (long axis X)",
+  "tris": 232,
+  "collision_pieces": 1,
+  "havok_default": "stone"
+ },
+ "lab_table": {
+  "nif": "StarfallSite\\props\\lab_table.nif",
+  "bounds": [
+   -70,
+   -35,
+   0,
+   70,
+   35,
+   55
+  ],
+  "footprint": [
+   -70,
+   -35,
+   70,
+   35
+  ],
+  "kind": "static",
+  "notes": "metal lab bench 140x70x55 with lower shelf; top surface z=55",
+  "tris": 362,
+  "collision_pieces": 6,
+  "havok_default": "metal",
+  "surface_z": 55
+ },
+ "locker": {
+  "nif": "StarfallSite\\props\\locker.nif",
+  "bounds": [
+   -25,
+   -23,
+   0,
+   25,
+   27,
+   190
+  ],
+  "footprint": [
+   -25,
+   -23,
+   25,
+   27
+  ],
+  "kind": "container",
+  "notes": "metal locker 50x45x190, door on +Y (static mesh, use as CONT model)",
+  "tris": 134,
+  "collision_pieces": 1,
+  "havok_default": "metal"
+ },
+ "meteor_crystal_large": {
+  "nif": "StarfallSite\\props\\meteor_crystal_large.nif",
+  "bounds": [
+   -146,
+   -142,
+   -15,
+   151,
+   116,
+   416
+  ],
+  "footprint": [
+   -140,
+   -115,
+   140,
+   115
+  ],
+  "kind": "static",
+  "notes": "glowing crystal cluster ~400 tall on a charred rock base; crystals use the glow-map shader + additive halo shells. Add a cyan LIGH nearby",
+  "tris": 650,
+  "collision_pieces": 12,
+  "havok_default": "glass"
+ },
+ "meteor_rock": {
+  "nif": "StarfallSite\\props\\meteor_rock.nif",
+  "bounds": [
+   -231,
+   -246,
+   -30,
+   273,
+   195,
+   305
+  ],
+  "footprint": [
+   -231,
+   -246,
+   273,
+   195
+  ],
+  "kind": "static",
+  "notes": "charred meteor chunk ~500x400x250 with glowing crystal veins (glow map) and a few crystal spikes; sunk ~25 units into the ground (bounds z<0)",
+  "tris": 1390,
+  "collision_pieces": 3,
+  "havok_default": "stone_heavy"
+ },
+ "overturned_table": {
+  "nif": "StarfallSite\\props\\overturned_table.nif",
+  "bounds": [
+   -76,
+   -35,
+   0,
+   68,
+   35,
+   70
+  ],
+  "footprint": [
+   -76,
+   -35,
+   68,
+   35
+  ],
+  "kind": "static",
+  "notes": "lab_table knocked on its side as cover: top faces +Y, legs point -Y; ~140x55x70",
+  "tris": 362,
+  "collision_pieces": 6,
+  "havok_default": "metal"
+ },
+ "pipe_cluster_wall": {
+  "nif": "StarfallSite\\props\\pipe_cluster_wall.nif",
+  "bounds": [
+   -128,
+   0,
+   0,
+   128,
+   36,
+   82
+  ],
+  "footprint": 0,
+  "kind": "static",
+  "notes": "4 wall pipes + brackets running 256 along X (-128..128); WALL-MOUNTED: origin on the wall surface at the bottom of the brackets, pipes extend toward +Y (max 26). Tiles every 256",
+  "tris": 1480,
+  "collision_pieces": 1,
+  "havok_default": "metal",
+  "mount": "wall"
+ },
+ "pipe_elbow": {
+  "nif": "StarfallSite\\props\\pipe_elbow.nif",
+  "bounds": [
+   -12,
+   -12,
+   -12,
+   44,
+   12,
+   44
+  ],
+  "footprint": 0,
+  "kind": "static",
+  "notes": "90 degree elbow, radius 8, bend radius 32: inlet at origin heading +X, outlet at (32,0,32) heading +Z. Origin on the pipe axis at the inlet flange",
+  "tris": 448,
+  "collision_pieces": 1,
+  "havok_default": "metal"
+ },
+ "pipe_straight_256": {
+  "nif": "StarfallSite\\props\\pipe_straight_256.nif",
+  "bounds": [
+   -129,
+   -13,
+   -13,
+   129,
+   13,
+   13
+  ],
+  "footprint": 0,
+  "kind": "static",
+  "notes": "straight pipe, radius 8 (flanges 12), axis along X from -128 to +128; origin ON THE PIPE AXIS at its centre (kit snapping)",
+  "tris": 384,
+  "collision_pieces": 1,
+  "havok_default": "metal"
+ },
+ "portable_lab": {
+  "nif": "StarfallSite\\props\\portable_lab.nif",
+  "bounds": [
+   -403,
+   -153,
+   0,
+   474,
+   278,
+   325
+  ],
+  "footprint": [
+   -403,
+   -153,
+   474,
+   278
+  ],
+  "kind": "static",
+  "notes": "trailer-style container lab 800x300x320 (long axis X), closed: windows + door (decal-like, not openable) on +Y with metal steps; wheels at -X, hitch/jack at +X",
+  "tris": 1998,
+  "collision_pieces": 5,
+  "havok_default": "metal",
+  "door": {
+   "center": [
+    60,
+    151,
+    62
+   ],
+   "width": 90,
+   "height": 200,
+   "facing": "+Y",
+   "note": "closed, not an opening"
+  }
+ },
+ "poster_safety": {
+  "nif": "StarfallSite\\props\\poster_safety.nif",
+  "bounds": [
+   -40,
+   0,
+   -60,
+   40,
+   1,
+   60
+  ],
+  "footprint": 0,
+  "kind": "decal",
+  "notes": "'SAFETY FIRST' poster 80x120; WALL decal: origin on the wall surface at the poster centre (place at ~150 high), 0.3 off the wall, no collision",
+  "tris": 2,
+  "collision_pieces": 0,
+  "havok_default": "cloth",
+  "mount": "wall"
+ },
+ "power_cable_coil": {
+  "nif": "StarfallSite\\props\\power_cable_coil.nif",
+  "bounds": [
+   -35,
+   -35,
+   0,
+   133,
+   43,
+   10
+  ],
+  "footprint": 0,
+  "kind": "static",
+  "notes": "coiled heavy power cable on the floor (~70 dia, 12 high) with a tail running to +X and a plug; low, walk-over",
+  "tris": 1348,
+  "collision_pieces": 1,
+  "havok_default": "organic"
+ },
+ "sandbag_wall": {
+  "nif": "StarfallSite\\props\\sandbag_wall.nif",
+  "bounds": [
+   -103,
+   -31,
+   -1,
+   103,
+   31,
+   88
+  ],
+  "footprint": [
+   -103,
+   -31,
+   103,
+   31
+  ],
+  "kind": "static",
+  "notes": "sandbag wall 200x60x90 (long axis X), staggered bags in two rows",
+  "tris": 3456,
+  "collision_pieces": 1,
+  "havok_default": "dirt"
+ },
+ "satellite_dish": {
+  "nif": "StarfallSite\\props\\satellite_dish.nif",
+  "bounds": [
+   -153,
+   -49,
+   -4,
+   153,
+   128,
+   359
+  ],
+  "footprint": [
+   -45,
+   -45,
+   45,
+   45
+  ],
+  "kind": "static",
+  "notes": "300 dia dish on a pedestal, aimed +Y and 35 deg up; ~330 tall",
+  "tris": 1156,
+  "collision_pieces": 3,
+  "havok_default": "metal"
+ },
+ "server_rack": {
+  "nif": "StarfallSite\\props\\server_rack.nif",
+  "bounds": [
+   -31,
+   -40,
+   0,
+   31,
+   44,
+   201
+  ],
+  "footprint": [
+   -31,
+   -40,
+   31,
+   44
+  ],
+  "kind": "static",
+  "notes": "server rack 60x80x200 (front +Y) with blinking-light glow front",
+  "tris": 162,
+  "collision_pieces": 2,
+  "havok_default": "metal"
+ },
+ "shelf_metal": {
+  "nif": "StarfallSite\\props\\shelf_metal.nif",
+  "bounds": [
+   -60,
+   -23,
+   0,
+   60,
+   23,
+   200
+  ],
+  "footprint": [
+   -60,
+   -23,
+   60,
+   23
+  ],
+  "kind": "static",
+  "notes": "metal shelving 120x45x200, 4 shelves at z=12/72/132/192 (shelf collision per level so items can sit on them)",
+  "tris": 216,
+  "collision_pieces": 6,
+  "havok_default": "metal",
+  "shelf_z": [
+   12,
+   72,
+   132,
+   192
+  ]
+ },
+ "shelf_metal_stocked": {
+  "nif": "StarfallSite\\props\\shelf_metal_stocked.nif",
+  "bounds": [
+   -60,
+   -23,
+   0,
+   60,
+   23,
+   200
+  ],
+  "footprint": [
+   -60,
+   -23,
+   60,
+   23
+  ],
+  "kind": "static",
+  "notes": "shelf_metal stocked with boxes, jars, cans and binders (no separate collision for contents)",
+  "tris": 1512,
+  "collision_pieces": 6,
+  "havok_default": "metal"
+ },
+ "sign_biohazard": {
+  "nif": "StarfallSite\\props\\sign_biohazard.nif",
+  "bounds": [
+   -30,
+   0,
+   -30,
+   30,
+   2,
+   30
+  ],
+  "footprint": 0,
+  "kind": "static",
+  "notes": "biohazard warning plate 60x60; WALL plate: origin on the wall surface at the sign centre (place at ~150-200 high)",
+  "tris": 46,
+  "collision_pieces": 1,
+  "havok_default": "metal",
+  "mount": "wall"
+ },
+ "sign_lambda": {
+  "nif": "StarfallSite\\props\\sign_lambda.nif",
+  "bounds": [
+   -30,
+   0,
+   -30,
+   30,
+   2,
+   30
+  ],
+  "footprint": 0,
+  "kind": "static",
+  "notes": "orange lambda plate 60x60; WALL plate: origin on the wall surface at the sign centre (place at ~150-200 high)",
+  "tris": 46,
+  "collision_pieces": 1,
+  "havok_default": "metal",
+  "mount": "wall"
+ },
+ "sign_restricted": {
+  "nif": "StarfallSite\\props\\sign_restricted.nif",
+  "bounds": [
+   -60,
+   0,
+   -30,
+   60,
+   2,
+   30
+  ],
+  "footprint": 0,
+  "kind": "static",
+  "notes": "'RESTRICTED AREA / AUTHORIZED PERSONNEL ONLY' plate 120x60; WALL plate: origin on the wall surface at the sign centre (place at ~150-200 high)",
+  "tris": 46,
+  "collision_pieces": 1,
+  "havok_default": "metal",
+  "mount": "wall"
+ },
+ "sign_testchamber": {
+  "nif": "StarfallSite\\props\\sign_testchamber.nif",
+  "bounds": [
+   -80,
+   0,
+   -40,
+   80,
+   2,
+   40
+  ],
+  "footprint": 0,
+  "kind": "static",
+  "notes": "'TEST CHAMBER / STARFALL RESEARCH SITE' plate 160x80; WALL plate: origin on the wall surface at the sign centre (place at ~150-200 high)",
+  "tris": 46,
+  "collision_pieces": 1,
+  "havok_default": "metal",
+  "mount": "wall"
+ },
+ "specimen_jar": {
+  "nif": "StarfallSite\\props\\specimen_jar.nif",
+  "bounds": [
+   -12,
+   -12,
+   0,
+   12,
+   12,
+   30
+  ],
+  "footprint": [
+   -12,
+   -12,
+   12,
+   12
+  ],
+  "kind": "static",
+  "notes": "glass specimen jar 20 dia x 30 on a small metal stand; for tables/shelves",
+  "tris": 366,
+  "collision_pieces": 1,
+  "havok_default": "metal"
+ },
+ "specimen_table": {
+  "nif": "StarfallSite\\props\\specimen_table.nif",
+  "bounds": [
+   -70,
+   -35,
+   0,
+   70,
+   35,
+   85
+  ],
+  "footprint": [
+   -70,
+   -35,
+   70,
+   35
+  ],
+  "kind": "static",
+  "notes": "lab_table with 3 specimen jars on top",
+  "tris": 1460,
+  "collision_pieces": 7,
+  "havok_default": "metal"
+ },
+ "terminal_standalone": {
+  "nif": "StarfallSite\\props\\terminal_standalone.nif",
+  "bounds": [
+   -22,
+   -25,
+   0,
+   22,
+   30,
+   37
+  ],
+  "footprint": [
+   -22,
+   -25,
+   22,
+   30
+  ],
+  "kind": "static",
+  "notes": "CRT terminal + keyboard for placing on tables/desks; screen faces +Y; glow screen",
+  "tris": 144,
+  "collision_pieces": 2,
+  "havok_default": "metal"
+ },
+ "test_platform": {
+  "nif": "StarfallSite\\props\\test_platform.nif",
+  "bounds": [
+   -151,
+   -151,
+   -1,
+   151,
+   151,
+   21
+  ],
+  "footprint": 0,
+  "kind": "static",
+  "notes": "round raised metal test platform 300 dia x 20 with a ramped edge (walkable collision, hull); glowing ring lights; lambda emblem",
+  "tris": 568,
+  "collision_pieces": 1,
+  "havok_default": "metal",
+  "surface_z": 20
+ },
+ "test_target": {
+  "nif": "StarfallSite\\props\\test_target.nif",
+  "bounds": [
+   -31,
+   -30,
+   0,
+   31,
+   30,
+   207
+  ],
+  "footprint": [
+   -30,
+   -30,
+   30,
+   30
+  ],
+  "kind": "static",
+  "notes": "metal practice target dummy on a weighted stand, ~195 tall; target face toward +Y",
+  "tris": 394,
+  "collision_pieces": 3,
+  "havok_default": "metal"
+ },
+ "vent_duct_256": {
+  "nif": "StarfallSite\\props\\vent_duct_256.nif",
+  "bounds": [
+   -128,
+   -36,
+   -62,
+   128,
+   36,
+   0
+  ],
+  "footprint": 0,
+  "kind": "static",
+  "notes": "rectangular ceiling duct 64 wide x 48 tall along X (-128..128); CEILING-MOUNTED: origin on the ceiling surface, duct hangs from z=-10 to -58. Tiles every 256",
+  "tris": 172,
+  "collision_pieces": 1,
+  "havok_default": "metal",
+  "mount": "ceiling"
+ },
+ "wall_lamp": {
+  "nif": "StarfallSite\\props\\wall_lamp.nif",
+  "bounds": [
+   -10,
+   0,
+   -10,
+   10,
+   22,
+   10
+  ],
+  "footprint": 0,
+  "kind": "light_fixture",
+  "notes": "caged wall lamp; WALL-MOUNTED: origin on the wall surface at the centre of the wall plate, lamp points +Y (out of the wall). Typical mount height 180-200. Add a LIGH at about (0,20,0)",
+  "tris": 704,
+  "collision_pieces": 1,
+  "havok_default": "metal",
+  "mount": "wall",
+  "light_offset": [
+   0,
+   20,
+   0
+  ]
+ },
+ "whiteboard": {
+  "nif": "StarfallSite\\props\\whiteboard.nif",
+  "bounds": [
+   -100,
+   0,
+   80,
+   100,
+   10,
+   200
+  ],
+  "footprint": 0,
+  "kind": "static",
+  "notes": "wall-mounted whiteboard 200x10x120 with equations; WALL-MOUNTED: origin on the wall surface AT FLOOR LEVEL, board spans z=80..200, extends to y=10 (tray)",
+  "tris": 158,
+  "collision_pieces": 1,
+  "havok_default": "metal",
+  "mount": "wall"
+ }
+}
