@@ -1,0 +1,1354 @@
+{
+ "spawner": {
+  "plugin": "StarfallCreatures.esp",
+  "groups": [
+   {
+    "name": "headcrab_nest",
+    "lvln": "0x81e",
+    "min": 2,
+    "max": 4,
+    "weight": 4,
+    "minLevel": 1,
+    "interior": true,
+    "exterior": true
+   },
+   {
+    "name": "zombie_pack",
+    "lvln": "0x81c",
+    "min": 1,
+    "max": 3,
+    "weight": 3,
+    "minLevel": 1,
+    "interior": true,
+    "exterior": true
+   },
+   {
+    "name": "outbreak",
+    "lvln": "0x81f",
+    "min": 3,
+    "max": 5,
+    "weight": 2,
+    "minLevel": 8,
+    "interior": true,
+    "exterior": true
+   },
+   {
+    "name": "fast_hunters",
+    "lvln": "0x821",
+    "min": 1,
+    "max": 2,
+    "weight": 1,
+    "minLevel": 12,
+    "interior": false,
+    "exterior": true
+   },
+   {
+    "name": "poison_zombie",
+    "lvln": "0x820",
+    "min": 1,
+    "max": 1,
+    "weight": 1,
+    "minLevel": 16,
+    "interior": true,
+    "exterior": false
+   }
+  ],
+  "canister": {
+   "plugin": "StarfallCreatures.esp",
+   "static": "0x822"
+  }
+ },
+ "headcrabKeyword": {
+  "plugin": "StarfallCreatures.esp",
+  "id": "0x800"
+ },
+ "zombieKeyword": {
+  "plugin": "StarfallCreatures.esp",
+  "id": "0x801"
+ },
+ "siteWorldspace": {
+  "plugin": "StarfallSite.esp",
+  "id": "0x99f"
+ },
+ "siteCells": [
+  {
+   "plugin": "StarfallSite.esp",
+   "id": "0x83d"
+  },
+  {
+   "plugin": "StarfallSite.esp",
+   "id": "0x970"
+  }
+ ],
+ "actors": {
+  "SFKast": {
+   "plugin": "StarfallSite.esp",
+   "id": "0xa6e"
+  },
+  "SFHale": {
+   "plugin": "StarfallSite.esp",
+   "id": "0xa70"
+  },
+  "SFRusk": {
+   "plugin": "StarfallSite.esp",
+   "id": "0xa72"
+  },
+  "SFVenn": {
+   "plugin": "StarfallSite.esp",
+   "id": "0xa74"
+  },
+  "SFPell": {
+   "plugin": "StarfallSite.esp",
+   "id": "0xa76"
+  },
+  "SFHolt": {
+   "plugin": "StarfallSite.esp",
+   "id": "0xa78"
+  },
+  "SFMire": {
+   "plugin": "StarfallSite.esp",
+   "id": "0xa7a"
+  },
+  "SFMoran": {
+   "plugin": "StarfallSite.esp",
+   "id": "0xa89"
+  },
+  "GuardA": {
+   "plugin": "StarfallSite.esp",
+   "id": "0xa7d"
+  },
+  "GuardB": {
+   "plugin": "StarfallSite.esp",
+   "id": "0xa7e"
+  }
+ },
+ "conversations": [
+  {
+   "a": "SFKast",
+   "b": "SFHale",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xbbf",
+     "text": "You pushed the array to ninety percent last night."
+    },
+    {
+     "who": "b",
+     "topic": "0xbc1",
+     "text": "Ninety two. And nothing exploded. You're welcome."
+    },
+    {
+     "who": "a",
+     "topic": "0xbc3",
+     "text": "Nothing exploded this time. The logs are not a dare, Marcus."
+    },
+    {
+     "who": "b",
+     "topic": "0xbc5",
+     "text": "Then stop writing them like one."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFKast",
+   "b": "SFHale",
+   "minStage": 0,
+   "maxStage": 39,
+   "lines": [
+    {
+     "who": "b",
+     "topic": "0xbc7",
+     "text": "Give me one full cycle at peak resonance. Just one."
+    },
+    {
+     "who": "a",
+     "topic": "0xbc9",
+     "text": "The last full cycle gave us Incident Seven."
+    },
+    {
+     "who": "b",
+     "topic": "0xbcb",
+     "text": "That was containment. My chamber held fine."
+    },
+    {
+     "who": "a",
+     "topic": "0xbcd",
+     "text": "How comforting for your chamber."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFHale",
+   "b": "SFKast",
+   "minStage": 40,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xbcf",
+     "text": "Rusk says you sealed Wing B with people inside. Tell me he's lying."
+    },
+    {
+     "who": "b",
+     "topic": "0xbd1",
+     "text": "Rusk is many things. A liar is not one of them."
+    },
+    {
+     "who": "a",
+     "topic": "0xbd3",
+     "text": "I built half this place for you, Aurelius."
+    },
+    {
+     "who": "b",
+     "topic": "0xbd5",
+     "text": "And I kept the other half standing. Pick which half you'd rather lose."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFHale",
+   "b": "SFVenn",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xbd7",
+     "text": "Venn, I need the capacitor bank at full charge by noon."
+    },
+    {
+     "who": "b",
+     "topic": "0xbd9",
+     "text": "And I need a screwdriver that isn't a sharpened spoon."
+    },
+    {
+     "who": "a",
+     "topic": "0xbdb",
+     "text": "So can you do it?"
+    },
+    {
+     "who": "b",
+     "topic": "0xbdd",
+     "text": "Of course I can do it. I'm just going to complain the whole time."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFVenn",
+   "b": "SFKast",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xbdf",
+     "text": "I put in for copper wire. Three weeks ago."
+    },
+    {
+     "who": "b",
+     "topic": "0xbe1",
+     "text": "The supply rift is unreliable. You know this."
+    },
+    {
+     "who": "a",
+     "topic": "0xbe3",
+     "text": "So I traded a Riverwood smith for some. He wanted a lantern."
+    },
+    {
+     "who": "b",
+     "topic": "0xbe5",
+     "text": "You gave a local our technology?"
+    },
+    {
+     "who": "a",
+     "topic": "0xbe7",
+     "text": "I gave him a lantern, Director. It's a lantern."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFRusk",
+   "b": "SFKast",
+   "minStage": 0,
+   "maxStage": 39,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xbe9",
+     "text": "The specimens react to the array cycles. Every single time."
+    },
+    {
+     "who": "b",
+     "topic": "0xbeb",
+     "text": "Correlation, Emil. Not causation."
+    },
+    {
+     "who": "a",
+     "topic": "0xbed",
+     "text": "They turn toward the Test Chamber. All of them. At once."
+    },
+    {
+     "who": "b",
+     "topic": "0xbef",
+     "text": "Then write it up. Quietly."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFHale",
+   "b": "SFRusk",
+   "minStage": 0,
+   "maxStage": 39,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xbf1",
+     "text": "Emil! Want to see a crystal sing at eighty percent?"
+    },
+    {
+     "who": "b",
+     "topic": "0xbf3",
+     "text": "I'd rather see it sleep at zero."
+    },
+    {
+     "who": "a",
+     "topic": "0xbf5",
+     "text": "Where's your sense of wonder?"
+    },
+    {
+     "who": "b",
+     "topic": "0xbf7",
+     "text": "In Wing B. Behind a sealed door."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFMire",
+   "b": "SFRusk",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xbf9",
+     "text": "Doctor, are you all right? You've barely eaten."
+    },
+    {
+     "who": "b",
+     "topic": "0xbfb",
+     "text": "I keep dreaming about the vents, Ollan."
+    },
+    {
+     "who": "a",
+     "topic": "0xbfd",
+     "text": "My grandmother said bad dreams are just the mind cleaning house."
+    },
+    {
+     "who": "b",
+     "topic": "0xbff",
+     "text": "Then my house is very, very dirty."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFHolt",
+   "b": "SFPell",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xc01",
+     "text": "Did you hear? Hale singed his eyebrows off again."
+    },
+    {
+     "who": "b",
+     "topic": "0xc03",
+     "text": "Again? That's the third time this month."
+    },
+    {
+     "who": "a",
+     "topic": "0xc05",
+     "text": "If I ran the chamber, nobody would lose any eyebrows."
+    },
+    {
+     "who": "b",
+     "topic": "0xc07",
+     "text": "You'd make me run the chamber, and I'd lose mine."
+    },
+    {
+     "who": "a",
+     "topic": "0xc09",
+     "text": "Delegation, Jory. It's a leadership skill."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFPell",
+   "b": "SFMire",
+   "minStage": 0,
+   "maxStage": 39,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xc0b",
+     "text": "Do you think there were people in Wing B when it sealed?"
+    },
+    {
+     "who": "b",
+     "topic": "0xc0d",
+     "text": "The roster said it was empty. Rosters don't lie."
+    },
+    {
+     "who": "a",
+     "topic": "0xc0f",
+     "text": "Rosters get written by people, Ollan."
+    },
+    {
+     "who": "b",
+     "topic": "0xc11",
+     "text": "Let's not talk about it here."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFHolt",
+   "b": "SFMire",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xc13",
+     "text": "You actually read those Nord books? They're all about axes."
+    },
+    {
+     "who": "b",
+     "topic": "0xc15",
+     "text": "Not all of them. Some are about bears. And honor."
+    },
+    {
+     "who": "a",
+     "topic": "0xc17",
+     "text": "Honor won't calibrate a resonance array."
+    },
+    {
+     "who": "b",
+     "topic": "0xc19",
+     "text": "Neither will you, from what Hale says."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFPell",
+   "b": "SFVenn",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xc1b",
+     "text": "Mister Venn, the light in my lab keeps flickering."
+    },
+    {
+     "who": "b",
+     "topic": "0xc1d",
+     "text": "Does it flicker, or does it strobe?"
+    },
+    {
+     "who": "a",
+     "topic": "0xc1f",
+     "text": "Is there a difference?"
+    },
+    {
+     "who": "b",
+     "topic": "0xc21",
+     "text": "One is annoying. The other means move your desk. Now."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFMire",
+   "b": "SFVenn",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xc23",
+     "text": "A woman in Riverwood lit a candle with her finger today."
+    },
+    {
+     "who": "b",
+     "topic": "0xc25",
+     "text": "With what? A flint up her sleeve?"
+    },
+    {
+     "who": "a",
+     "topic": "0xc27",
+     "text": "Nothing. Just her finger."
+    },
+    {
+     "who": "b",
+     "topic": "0xc29",
+     "text": "Great. They get free fire, and I can't even get a fuse."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFMoran",
+   "b": "SFKast",
+   "minStage": 0,
+   "maxStage": 39,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xc2b",
+     "text": "Two more canisters spotted near the north ridge."
+    },
+    {
+     "who": "b",
+     "topic": "0xc2d",
+     "text": "Retrieve them. Discreetly."
+    },
+    {
+     "who": "a",
+     "topic": "0xc2f",
+     "text": "My people aren't hounds, Director. They bleed."
+    },
+    {
+     "who": "b",
+     "topic": "0xc31",
+     "text": "Then send the ones who bleed least."
+    },
+    {
+     "who": "a",
+     "topic": "0xc33",
+     "text": "I'll pretend you didn't say that."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFMoran",
+   "b": "SFKast",
+   "minStage": 40,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xc35",
+     "text": "You told me Wing B was empty."
+    },
+    {
+     "who": "b",
+     "topic": "0xc37",
+     "text": "I told you what you needed to hold the line."
+    },
+    {
+     "who": "a",
+     "topic": "0xc39",
+     "text": "My officers were on that door. They heard the knocking."
+    },
+    {
+     "who": "b",
+     "topic": "0xc3b",
+     "text": "So did I, Captain. So did I."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFMoran",
+   "b": "GuardA",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xc3d",
+     "text": "Listen up. Headcrabs like the ventilation. Check the grates every hour."
+    },
+    {
+     "who": "b",
+     "topic": "0xc3f",
+     "text": "Every hour, Captain? They're very small grates."
+    },
+    {
+     "who": "a",
+     "topic": "0xc41",
+     "text": "And very small headcrabs fit through them. Every hour."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFMoran",
+   "b": "GuardB",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xc43",
+     "text": "Nobody fraternizes with the locals while on duty."
+    },
+    {
+     "who": "b",
+     "topic": "0xc45",
+     "text": "What about off duty, Captain?"
+    },
+    {
+     "who": "a",
+     "topic": "0xc47",
+     "text": "Off duty, you sleep. That's an order."
+    },
+    {
+     "who": "b",
+     "topic": "0xc49",
+     "text": "Understood. Sleep. Not mead."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFMoran",
+   "b": "GuardA",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xc4b",
+     "text": "If a scientist tells you something is safe, what do you do?"
+    },
+    {
+     "who": "b",
+     "topic": "0xc4d",
+     "text": "Assume it isn't, Captain."
+    },
+    {
+     "who": "a",
+     "topic": "0xc4f",
+     "text": "And if they say it's dangerous?"
+    },
+    {
+     "who": "b",
+     "topic": "0xc51",
+     "text": "Run, Captain."
+    },
+    {
+     "who": "a",
+     "topic": "0xc53",
+     "text": "Good. You'll outlive most of them."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "GuardA",
+   "b": "GuardB",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xc55",
+     "text": "You ever think about going home?"
+    },
+    {
+     "who": "b",
+     "topic": "0xc57",
+     "text": "Every day. Twice before breakfast."
+    },
+    {
+     "who": "a",
+     "topic": "0xc59",
+     "text": "Think they'll ever open the rift for a ride back?"
+    },
+    {
+     "who": "b",
+     "topic": "0xc5b",
+     "text": "They can't even open the canteen on time."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "GuardA",
+   "b": "GuardB",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xc5d",
+     "text": "Saw a dragon over the mountains this morning."
+    },
+    {
+     "who": "b",
+     "topic": "0xc5f",
+     "text": "A real one?"
+    },
+    {
+     "who": "a",
+     "topic": "0xc61",
+     "text": "No, a painted one. Yes, a real one."
+    },
+    {
+     "who": "b",
+     "topic": "0xc63",
+     "text": "And we're guarding a giant glowing crater. Perfect."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "GuardB",
+   "b": "GuardA",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xc65",
+     "text": "Tried the mead in Riverwood on my day off."
+    },
+    {
+     "who": "b",
+     "topic": "0xc67",
+     "text": "And?"
+    },
+    {
+     "who": "a",
+     "topic": "0xc69",
+     "text": "Woke up in a barn. Next to a goat. Wearing my helmet."
+    },
+    {
+     "who": "b",
+     "topic": "0xc6b",
+     "text": "The goat, or you?"
+    },
+    {
+     "who": "a",
+     "topic": "0xc6d",
+     "text": "I'd rather not say."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "GuardA",
+   "b": "GuardB",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xc6f",
+     "text": "Holt asked me to carry his notes. His notes."
+    },
+    {
+     "who": "b",
+     "topic": "0xc71",
+     "text": "Did you?"
+    },
+    {
+     "who": "a",
+     "topic": "0xc73",
+     "text": "I carried them. Straight into the brazier."
+    },
+    {
+     "who": "b",
+     "topic": "0xc75",
+     "text": "Officer of the month."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "GuardA",
+   "b": "GuardB",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xc77",
+     "text": "What's worse, a headcrab or a zombie?"
+    },
+    {
+     "who": "b",
+     "topic": "0xc79",
+     "text": "Headcrab. A zombie's just a headcrab with a commute."
+    },
+    {
+     "who": "a",
+     "topic": "0xc7b",
+     "text": "I really didn't need that picture in my head."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "GuardA",
+   "b": "GuardB",
+   "minStage": 40,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xc7d",
+     "text": "You hear what Rusk found? About Wing B?"
+    },
+    {
+     "who": "b",
+     "topic": "0xc7f",
+     "text": "Everyone's heard. The Director sealed it with people inside."
+    },
+    {
+     "who": "a",
+     "topic": "0xc81",
+     "text": "And we stood guard while they knocked."
+    },
+    {
+     "who": "b",
+     "topic": "0xc83",
+     "text": "We didn't know. Keep telling yourself that. I do."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "GuardA",
+   "b": "GuardB",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xc85",
+     "text": "There's a giant herding mammoths near the north fence."
+    },
+    {
+     "who": "b",
+     "topic": "0xc87",
+     "text": "Did it notice us?"
+    },
+    {
+     "who": "a",
+     "topic": "0xc89",
+     "text": "It waved."
+    },
+    {
+     "who": "b",
+     "topic": "0xc8b",
+     "text": "Should we have waved back?"
+    },
+    {
+     "who": "a",
+     "topic": "0xc8d",
+     "text": "I did. Seemed polite."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFHolt",
+   "b": "SFHale",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xc8f",
+     "text": "Dr. Hale, I reviewed your calibration notes. I have suggestions."
+    },
+    {
+     "who": "b",
+     "topic": "0xc91",
+     "text": "Have you built anything that can lift a cart, Holt?"
+    },
+    {
+     "who": "a",
+     "topic": "0xc93",
+     "text": "Not yet."
+    },
+    {
+     "who": "b",
+     "topic": "0xc95",
+     "text": "Then your suggestions can wait in line behind the cart."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFHale",
+   "b": "SFPell",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xc97",
+     "text": "Pell! Readings on crystal four?"
+    },
+    {
+     "who": "b",
+     "topic": "0xc99",
+     "text": "It's humming at a pitch I can taste, sir."
+    },
+    {
+     "who": "a",
+     "topic": "0xc9b",
+     "text": "Excellent! Write that down. Exactly that."
+    },
+    {
+     "who": "b",
+     "topic": "0xc9d",
+     "text": "Taste, sir?"
+    },
+    {
+     "who": "a",
+     "topic": "0xc9f",
+     "text": "Science is a full body experience, Jory."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFVenn",
+   "b": "SFRusk",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xca1",
+     "text": "The crater floor sank another inch this month."
+    },
+    {
+     "who": "b",
+     "topic": "0xca3",
+     "text": "Is that structural, or is something underneath?"
+    },
+    {
+     "who": "a",
+     "topic": "0xca5",
+     "text": "I'm an engineer. I only answer the first kind of question."
+    },
+    {
+     "who": "b",
+     "topic": "0xca7",
+     "text": "Then who answers the second kind?"
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFKast",
+   "b": "SFMire",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xca9",
+     "text": "Mire, I hear you've been visiting Riverwood."
+    },
+    {
+     "who": "b",
+     "topic": "0xcab",
+     "text": "Only to trade, Director. And to read at the inn."
+    },
+    {
+     "who": "a",
+     "topic": "0xcad",
+     "text": "Say nothing about the site. The locals already think we're star cultists."
+    },
+    {
+     "who": "b",
+     "topic": "0xcaf",
+     "text": "They also call me 'the polite one.' I'd hate to ruin that."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFPell",
+   "b": "SFRusk",
+   "minStage": 40,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xcb1",
+     "text": "Doctor, is it true? The journal, the people in Wing B?"
+    },
+    {
+     "who": "b",
+     "topic": "0xcb3",
+     "text": "It's true, Jory. I should have spoken sooner."
+    },
+    {
+     "who": "a",
+     "topic": "0xcb5",
+     "text": "Why didn't you?"
+    },
+    {
+     "who": "b",
+     "topic": "0xcb7",
+     "text": "Fear. The same reason you're whispering now."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFVenn",
+   "b": "SFHale",
+   "minStage": 50,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xcb9",
+     "text": "So Kast is still in charge after all that?"
+    },
+    {
+     "who": "b",
+     "topic": "0xcbb",
+     "text": "The Directorate is far away. And nobody knows the array like him."
+    },
+    {
+     "who": "a",
+     "topic": "0xcbd",
+     "text": "Except you."
+    },
+    {
+     "who": "b",
+     "topic": "0xcbf",
+     "text": "Except me. And I'm the one who kept pushing it."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFHolt",
+   "b": "SFPell",
+   "minStage": 40,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xcc1",
+     "text": "If Kast falls, Hale moves up, and someone gets the chamber."
+    },
+    {
+     "who": "b",
+     "topic": "0xcc3",
+     "text": "People died, Brennic."
+    },
+    {
+     "who": "a",
+     "topic": "0xcc5",
+     "text": "I know. I'm sorry. I just don't know what else to think about."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFMoran",
+   "b": "SFRusk",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xcc7",
+     "text": "Doc, one of my officers got scratched by a crab."
+    },
+    {
+     "who": "b",
+     "topic": "0xcc9",
+     "text": "Scratched or bitten? It matters enormously."
+    },
+    {
+     "who": "a",
+     "topic": "0xccb",
+     "text": "Scratched."
+    },
+    {
+     "who": "b",
+     "topic": "0xccd",
+     "text": "Then send them in. And keep them away from anything with legs."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "SFMire",
+   "b": "GuardB",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xccf",
+     "text": "Do you miss home, officer?"
+    },
+    {
+     "who": "b",
+     "topic": "0xcd1",
+     "text": "Every hour. You?"
+    },
+    {
+     "who": "a",
+     "topic": "0xcd3",
+     "text": "I miss rain that doesn't turn into snow."
+    },
+    {
+     "who": "b",
+     "topic": "0xcd5",
+     "text": "I miss being warm. I've forgotten what it feels like."
+    }
+   ],
+   "weight": 1
+  },
+  {
+   "a": "GuardA",
+   "b": "SFVenn",
+   "minStage": 0,
+   "maxStage": 1000,
+   "lines": [
+    {
+     "who": "a",
+     "topic": "0xcd7",
+     "text": "Venn, the main gate is stuck again."
+    },
+    {
+     "who": "b",
+     "topic": "0xcd9",
+     "text": "Did you kick it?"
+    },
+    {
+     "who": "a",
+     "topic": "0xcdb",
+     "text": "Yes."
+    },
+    {
+     "who": "b",
+     "topic": "0xcdd",
+     "text": "Kick it lower. That's the whole repair."
+    }
+   ],
+   "weight": 1
+  }
+ ],
+ "infoActions": [
+  {
+   "info": "0xd5d",
+   "once": true,
+   "setStage": 20,
+   "objectiveDisplayed": [
+    20
+   ],
+   "objectiveCompleted": [
+    10
+   ]
+  },
+  {
+   "info": "0xd63",
+   "once": true,
+   "setStage": 30,
+   "objectiveDisplayed": [
+    30
+   ],
+   "objectiveCompleted": [
+    20
+   ],
+   "removeItem": {
+    "plugin": "GravityGun.esp",
+    "id": "0x806",
+    "count": 3
+   }
+  },
+  {
+   "info": "0xd69",
+   "once": false,
+   "openVendor": true
+  },
+  {
+   "info": "0xd6c",
+   "once": true,
+   "addItem": {
+    "plugin": "StarfallSite.esp",
+    "id": "0x817",
+    "count": 1
+   }
+  },
+  {
+   "info": "0xd76",
+   "once": true,
+   "setStage": 40,
+   "objectiveDisplayed": [
+    40
+   ],
+   "objectiveCompleted": [
+    30
+   ],
+   "removeItem": {
+    "plugin": "StarfallSite.esp",
+    "id": "0x818",
+    "count": 1
+   }
+  },
+  {
+   "info": "0xd7a",
+   "once": true,
+   "setStage": 50,
+   "objectiveCompleted": [
+    40
+   ],
+   "unlock": [
+    {
+     "plugin": "StarfallSite.esp",
+     "id": "0x949"
+    }
+   ]
+  },
+  {
+   "info": "0xd7c",
+   "once": true,
+   "setStage": 50,
+   "objectiveCompleted": [
+    40
+   ],
+   "unlock": [
+    {
+     "plugin": "StarfallSite.esp",
+     "id": "0x949"
+    }
+   ]
+  }
+ ],
+ "quest": {
+  "plugin": "StarfallSite.esp",
+  "id": "0xab6"
+ },
+ "vendor": {
+  "actor": "0xa70"
+ },
+ "gate": {
+  "anchor": {
+   "plugin": "Skyrim.esm",
+   "id": "0xb6cdf"
+  },
+  "offset": [
+   900.0,
+   -600.0
+  ],
+  "facing": 0.0,
+  "refs": [
+   {
+    "id": "0xa62",
+    "dx": 0,
+    "dy": -186,
+    "dz": 0,
+    "angle": 0
+   },
+   {
+    "id": "0xa63",
+    "dx": 0,
+    "dy": -8,
+    "dz": 250,
+    "angle": 0
+   },
+   {
+    "id": "0xa64",
+    "dx": -380,
+    "dy": 320,
+    "dz": 0,
+    "angle": 180
+   },
+   {
+    "id": "0xa65",
+    "dx": -380,
+    "dy": 340,
+    "dz": 215,
+    "angle": 0
+   },
+   {
+    "id": "0xa66",
+    "dx": 380,
+    "dy": 320,
+    "dz": 0,
+    "angle": 180
+   },
+   {
+    "id": "0xa67",
+    "dx": 380,
+    "dy": 340,
+    "dz": 215,
+    "angle": 0
+   },
+   {
+    "id": "0xa68",
+    "dx": -330,
+    "dy": 220,
+    "dz": 0,
+    "angle": 20
+   },
+   {
+    "id": "0xa69",
+    "dx": 330,
+    "dy": 220,
+    "dz": 0,
+    "angle": -20
+   },
+   {
+    "id": "0xa6a",
+    "dx": 0,
+    "dy": 600,
+    "dz": 0,
+    "angle": 0
+   },
+   {
+    "id": "0xa6b",
+    "dx": 0,
+    "dy": 0,
+    "dz": 0,
+    "angle": 0,
+    "door": true
+   },
+   {
+    "id": "0xaab",
+    "dx": -170,
+    "dy": 260,
+    "dz": 0,
+    "angle": 0
+   }
+  ],
+  "door": "0xa6b",
+  "arrivalDoor": "0xa6c",
+  "requiredItem": {
+   "plugin": "GravityGun.esp",
+   "id": "0x803"
+  },
+  "deniedMessage": "The checkpoint is sealed. The guards will not let you through without the Zero-Point device."
+ }
+}
